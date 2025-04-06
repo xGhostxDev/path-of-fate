@@ -26028,6 +26028,30 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AdMob::SetTestMode"
+              },
+              "parameters": [
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "AdMob::SetupBanner"
+              },
+              "parameters": [
+                "\"\"",
+                "\"\"",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "AdMob::ShowBanner"
+              },
+              "parameters": []
             }
           ]
         },
