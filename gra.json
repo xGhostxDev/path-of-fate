@@ -4995,6 +4995,14 @@
         "name": "Default2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Village Gate Top.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Village Gate Top.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5004,7 +5012,18 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "lvly",
+      "type": "array",
+      "children": [
+        {
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -7081,6 +7100,66 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Wyswietlanie lvly",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const savedLvly = localStorage.getItem(\"PostepGry\");",
+                "",
+                "let lvlyArray = [];",
+                "",
+                "// Jeśli są zapisane dane, odczytujemy je i konwertujemy z JSON",
+                "if (savedLvly) {",
+                "  lvlyArray = JSON.parse(savedLvly);",
+                "} else {",
+                "  // Jeśli nie ma zapisanych danych, ustawiamy domyślny stan",
+                "  lvlyArray = [true];  // Przykład: lvl1 aktywny, reszta zablokowana",
+                "}",
+                "",
+                "// Ile poziomów chcesz sprawdzić",
+                "const maxLevels = 10;",
+                "",
+                "for (let i = 1; i <= maxLevels; i++) {",
+                "  const index = i - 1; // bo lvl1 → lvly[0], lvl2 → lvly[1], itd.",
+                "  const isActive = lvlyArray[index];",
+                "  const objectName = \"lvl\" + i;",
+                "",
+                "  const buttons = runtimeScene.getObjects(objectName);",
+                "",
+                "  console.log(`Sprawdzam: ${objectName} (lvly[${index}]) → aktywny: ${isActive}`);",
+                "",
+                "  for (const btn of buttons) {",
+                "    if (!isActive) {",
+                "      btn.setVariableBoolean(btn.getVariables().get(\"enabled\"), false);",
+                "      btn.setOpacity(100); // Półprzezroczysty = zablokowany",
+                "      console.log(`${objectName} został zablokowany`);",
+                "    } else {",
+                "      btn.setVariableBoolean(btn.getVariables().get(\"enabled\"), true);",
+                "      btn.setOpacity(255);",
+                "      console.log(`${objectName} aktywny`);",
+                "    }",
+                "  }",
+                "",
+                "  if (buttons.length === 0) {",
+                "    console.warn(`⚠️ Nie znaleziono przycisku: ${objectName}`);",
+                "  }",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -7209,7 +7288,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5843784410740942,
+        "zoomFactor": 0.5117784035210186,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7585,6 +7664,23 @@
           "x": 37,
           "y": 14,
           "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 234,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Portal",
+          "persistentUuid": "f05f08ce-eee7-4f6b-944e-84a3e3c9ce69",
+          "width": 164,
+          "x": 234,
+          "y": 397,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -25628,6 +25724,17 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 64,
+          "name": "Portal",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 64,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -26051,6 +26158,9 @@
           },
           {
             "objectName": "bullet"
+          },
+          {
+            "objectName": "Portal"
           }
         ]
       },
@@ -26697,6 +26807,90 @@
                 "Alchemist",
                 ""
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Portal koniec"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Portal",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "Player",
+                "360",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Menu\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const savedLvly = localStorage.getItem(\"PostepGry\");",
+                "",
+                "let lvlyArray = [];",
+                "",
+                "// Jeśli są zapisane dane, odczytujemy je i konwertujemy z JSON",
+                "if (savedLvly) {",
+                "  lvlyArray = JSON.parse(savedLvly)",
+                "}",
+                "if(lvlyArray[0]){",
+                "    lvlyArray.push(true);  // Nowy poziom aktywny",
+                "    console.log(\"Stan lvly po dodaniu nowego poziomu: \", lvlyArray);",
+                "",
+                "    localStorage.setItem(\"PostepGry\", JSON.stringify(lvlyArray));",
+                "",
+                "    console.log(\"Stan lvly zapisany do localStorage: \", lvlyArray);",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         }
