@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4481978045410357,
+    "zoomFactor": 0.46331118245139796,
     "windowMask": false
   },
   "objectsGroups": [
@@ -54,6 +54,29 @@
         },
         {
           "name": "lvl10"
+        },
+        {
+          "name": "lvl11"
+        },
+        {
+          "name": "lvl12"
+        }
+      ]
+    },
+    {
+      "name": "czasy",
+      "objects": [
+        {
+          "name": "tab1"
+        },
+        {
+          "name": "tab2"
+        },
+        {
+          "name": "tab3"
+        },
+        {
+          "name": "tab4"
         }
       ]
     },
@@ -81,10 +104,7 @@
           "name": "graj"
         },
         {
-          "name": "lobbydl"
-        },
-        {
-          "name": "mpcreate"
+          "name": "autorzyBTN"
         }
       ]
     }
@@ -317,8 +337,8 @@
       "name": "graj",
       "persistentUuid": "581be203-f47b-484b-8ee0-d15b7ee0f3d3",
       "width": 0,
-      "x": 30,
-      "y": 31,
+      "x": 35,
+      "y": 35,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -375,16 +395,96 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 87,
-      "keepRatio": true,
+      "depth": 46.870588235294115,
+      "height": 85,
       "layer": "",
       "name": "tab1",
       "persistentUuid": "f5858b59-9afa-471a-9051-4cee9ab5305c",
-      "width": 126,
-      "x": 230,
-      "y": 35,
+      "width": 120,
+      "x": 70,
+      "y": 105,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 42.94736842105263,
+      "height": 85,
+      "layer": "",
+      "name": "tab2",
+      "persistentUuid": "59adecc2-2902-44e6-934b-73ad7662ad86",
+      "width": 120,
+      "x": 415,
+      "y": 105,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 85,
+      "layer": "",
+      "name": "tab3",
+      "persistentUuid": "6cccc5d1-596f-43aa-847d-3435376b8b62",
+      "width": 120,
+      "x": 755,
+      "y": 105,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 85,
+      "layer": "",
+      "name": "tab4",
+      "persistentUuid": "47c4d05f-3013-497e-8fd7-56b60744bdf8",
+      "width": 120,
+      "x": 1095,
+      "y": 105,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 646,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "autorzTXT",
+      "persistentUuid": "d9ef9ed6-4e6f-43e6-a972-521f6942b681",
+      "width": 807,
+      "x": 366,
+      "y": 798,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "autorzyBTN",
+      "persistentUuid": "e2ecb676-a33c-46a5-a774-555ea44b7435",
+      "width": 0,
+      "x": 366,
+      "y": 35,
+      "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1527,174 +1627,6 @@
     },
     {
       "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
-      "name": "lobbydl",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 0,
-        "RightPadding": 0,
-        "PressedLabelOffsetY": 2,
-        "BottomPadding": 4,
-        "TopPadding": 0,
-        "HoveredFadeOutDuration": 0
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 10,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Floating Out Button Dark Blue_Hovered.png",
-          "tiled": false,
-          "topMargin": 10,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 10,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Floating Out Button Dark Blue_Idle.png",
-          "tiled": false,
-          "topMargin": 10,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "Join to lobby",
-          "font": "CarterOne-Regular.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Join to lobby",
-            "font": "CarterOne-Regular.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 10,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Floating Out Button Dark Blue_Pressed.png",
-          "tiled": false,
-          "topMargin": 10,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
-      "name": "mpcreate",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 0,
-        "RightPadding": 0,
-        "PressedLabelOffsetY": 2,
-        "BottomPadding": 4,
-        "TopPadding": 0,
-        "HoveredFadeOutDuration": 0
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 10,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Floating Out Button Dark Blue_Hovered.png",
-          "tiled": false,
-          "topMargin": 10,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 10,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Floating Out Button Dark Blue_Idle.png",
-          "tiled": false,
-          "topMargin": 10,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "create lobby",
-          "font": "CarterOne-Regular.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "create lobby",
-            "font": "CarterOne-Regular.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 10,
-          "height": 64,
-          "leftMargin": 6,
-          "rightMargin": 6,
-          "texture": "Floating Out Button Dark Blue_Pressed.png",
-          "tiled": false,
-          "topMargin": 10,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
       "name": "back",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
@@ -2028,6 +1960,365 @@
           "width": 256
         }
       }
+    },
+    {
+      "assetStoreId": "0d3f4843e5ebb7af30fd80adf19a1c5a14164c1283f344991dc2aa14067a1262",
+      "name": "tab2",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Idle.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "⏱",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 16,
+            "g": 38,
+            "r": 111
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "⏱",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "111;38;16"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "0d3f4843e5ebb7af30fd80adf19a1c5a14164c1283f344991dc2aa14067a1262",
+      "name": "tab3",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Idle.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "⏱",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 16,
+            "g": 38,
+            "r": 111
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "⏱",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "111;38;16"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "0d3f4843e5ebb7af30fd80adf19a1c5a14164c1283f344991dc2aa14067a1262",
+      "name": "tab4",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Idle.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "⏱",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 16,
+            "g": 38,
+            "r": 111
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "⏱",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "111;38;16"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "autorzTXT",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[size=40][b]Dziękujemy, że grasz w [color=orange]Path of fare[/color]![/b][/size]\n\n[i]To dzięki Tobie ten świat żyje.  \nTwój czas, energia i emocje naprawdę się liczą.[/i]\n\n[color=gray]Stworzyliśmy tę grę z sercem –  \ndla Ciebie, Graczu.[/color]\n\n[b][color=green]Miłej zabawy![/color][/b] 💚\n\n[i]Zespół [b]Bober Dev[/b]:[/i]\n\n\n[b]Ghost[/b],[b]Pstrys[/b] – Game Designer  \n[b]NN[/b] – Lead Artist  \n[b]Ghost[/b] – Programmer  \n[b]Ghost[/b] – Music & Sound  \n[b]Ghost[/b],[b]Pstrys[/b] – Writer & Narrative Design",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": false
+      }
+    },
+    {
+      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+      "name": "autorzyBTN",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 4,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Hovered.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Idle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Autorzy",
+          "font": "CarterOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Autorzy",
+            "font": "CarterOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Pressed.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2038,6 +2329,15 @@
         "children": [
           {
             "objectName": "tab1"
+          },
+          {
+            "objectName": "tab2"
+          },
+          {
+            "objectName": "tab3"
+          },
+          {
+            "objectName": "tab4"
           }
         ]
       },
@@ -2089,10 +2389,10 @@
             "objectName": "graj"
           },
           {
-            "objectName": "lobbydl"
+            "objectName": "autorzyBTN"
           },
           {
-            "objectName": "mpcreate"
+            "objectName": "autorzTXT"
           }
         ]
       },
@@ -2143,6 +2443,14 @@
           },
           "parameters": [
             "przes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "czasy"
           ]
         },
         {
@@ -2205,6 +2513,15 @@
         },
         {
           "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "czasy",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
@@ -2212,6 +2529,75 @@
             "Text",
             "=",
             "ToString(VariableChildCount(strmenu))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "autorzyBTN",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "autorzTXT",
+            "Tween",
+            "\"dogory\"",
+            "-50",
+            "\"linear\"",
+            "10",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "menu"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "menu",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+          },
+          "parameters": [
+            "autorzTXT",
+            "Tween",
+            "\"dodolu\"",
+            "800",
+            "\"linear\"",
+            "5",
+            ""
           ]
         }
       ]
@@ -2261,6 +2647,14 @@
           },
           "parameters": [
             "przes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "czasy"
           ]
         }
       ]
@@ -2477,7 +2871,7 @@
             "            const leaderboardID = \"Czas_lvl\" + i;",
             "",
             "            // Pokaż ranking",
-            "           // gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, leaderboardID, false);",
+            "            gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, leaderboardID, true);",
             "",
             "            break; // zatrzymujemy pętlę po kliknięciu",
             "        }",
@@ -2490,32 +2884,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "tab1",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Leaderboards::DisplayLeaderboard"
-          },
-          "parameters": [
-            "",
-            "\"Czas_lvl1\"",
-            "yes"
-          ]
-        }
-      ]
     }
   ],
   "layers": [
@@ -2621,6 +2989,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
