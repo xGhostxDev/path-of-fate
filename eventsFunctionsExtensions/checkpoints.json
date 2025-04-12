@@ -29,7 +29,13 @@
   ],
   "dependencies": [],
   "globalVariables": [],
-  "sceneVariables": [],
+  "sceneVariables": [
+    {
+      "name": "padl",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "eventsFunctions": [
     {
       "description": "Update a checkpoint of an object.",
@@ -198,6 +204,16 @@
                 "ToLoadObject.Variable(__Checkpoints.Position[\"X\" + GetArgumentAsString(\"CheckpointName\")])",
                 "=",
                 "ToLoadObject.Variable(__Checkpoints.Position[\"Y\" + GetArgumentAsString(\"CheckpointName\")])"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "padl",
+                "+",
+                "1"
               ]
             }
           ]

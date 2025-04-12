@@ -18,11 +18,17 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210186,
+    "zoomFactor": 0.47893418845352564,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "czasInt",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -221,8 +227,8 @@
       "name": "Alchemist",
       "persistentUuid": "8ae7ead6-bdd5-4da9-adad-b0e80ae34878",
       "width": 63,
-      "x": 2184,
-      "y": 532,
+      "x": 1291,
+      "y": 542,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -368,49 +374,32 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 122,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Lives",
-      "persistentUuid": "502bfcbe-76fe-497f-8fb8-d0741bd21cf8",
-      "width": 201,
-      "x": 1830,
-      "y": 460,
-      "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 103,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "MenuButton",
-      "persistentUuid": "662e0e95-5d96-4e07-9317-97ac3162e68a",
-      "width": 209,
-      "x": 37,
-      "y": 14,
-      "zOrder": 25,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 234,
       "keepRatio": true,
       "layer": "",
       "name": "Portal",
       "persistentUuid": "f05f08ce-eee7-4f6b-944e-84a3e3c9ce69",
       "width": 164,
-      "x": 234,
-      "y": 397,
+      "x": 1396,
+      "y": 381,
       "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 60,
+      "keepRatio": true,
+      "layer": "",
+      "name": "czas",
+      "persistentUuid": "d72f1563-61c9-475a-bfe5-9d1414bafa1a",
+      "width": 174,
+      "x": 34,
+      "y": -6,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -18465,6 +18454,53 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": true,
+      "name": "czas",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Text",
+      "font": "CarterOne-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 45,
+      "color": {
+        "b": 33,
+        "g": 211,
+        "r": 126
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": true,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "CarterOne-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 45,
+        "color": "126;211;33"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -18484,6 +18520,9 @@
           },
           {
             "objectName": "tesktgosciu"
+          },
+          {
+            "objectName": "czas"
           }
         ]
       },
@@ -19481,64 +19520,140 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Kolizje strzaly",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Arrow",
-            "Player",
-            "",
-            "",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Arrow",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Checkpoints::LoadCheckpoint"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "Player",
+                "\"Start\"",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "ArrowGracz",
+                "Alchemist",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Alchemist",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Arrow.X()",
+                    "<",
+                    "CameraBorderLeft()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Arrow.X()",
+                    ">",
+                    "CameraBorderRight()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Arrow.Y()",
+                    "<",
+                    "CameraBorderTop()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Arrow.Y()",
+                    ">",
+                    "CameraBorderBottom()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Arrow",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Checkpoints::LoadCheckpoint"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "Player",
-            "\"Start\"",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "ArrowGracz",
-            "Alchemist",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Alchemist",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
@@ -19551,6 +19666,114 @@
         "textR": 0
       },
       "comment": "Portal koniec"
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Czasomierz",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"start\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"start\"",
+                ">=",
+                "czasInt"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "czasInt",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "czas",
+                "Text",
+                "=",
+                "ToString(floor(czasInt/60)) + \":\" + ToString(mod(czasInt,60))"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "czas.X()",
+                    "<",
+                    "CameraBorderLeft()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "czas",
+                    "Tween",
+                    "\"a\"",
+                    "CameraBorderLeft() + 50",
+                    "\"linear\"",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -19594,6 +19817,16 @@
           "parameters": [
             "",
             "\"Menu\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Leaderboards::SaveConnectedPlayerScore"
+          },
+          "parameters": [
+            "",
+            "\"54985b6d-63b0-428c-a908-9bd66a960993\"",
+            "czasInt"
           ]
         }
       ],
@@ -19756,6 +19989,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
