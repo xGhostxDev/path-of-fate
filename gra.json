@@ -5075,6 +5075,38 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e3269fc6a93f1d6083564069b4d14c7e31df6bfc96d27f82c791d2210242315a_Red Button_Pressed.png",
           "name": "Red Button_Pressed.png"
         }
+      },
+      {
+        "file": "assets/portal.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/portal.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\portal.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Key2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Key2.png\"}",
+        "name": "Key2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Key3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Key3.png\"}",
+        "name": "Key3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Key4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Key4",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5104,18 +5136,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/lvl0"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/lvl01"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/lvl02"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/lvl03"
     }
   ],
   "externalEvents": [],
