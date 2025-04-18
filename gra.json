@@ -12,7 +12,7 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
     "orientation": "landscape",
-    "packageName": "com.GKRSD.pof",
+    "packageName": "com.gkrsd.pof",
     "pixelsRounding": false,
     "projectUuid": "98afaff0-b2c8-4793-8edf-6033c314f3c2",
     "scaleMode": "linear",
@@ -21,7 +21,7 @@
     "version": "1.0.0",
     "name": "Path of Fare",
     "description": "",
-    "author": "",
+    "author": "Cobalt Peace Studio",
     "windowWidth": 1280,
     "windowHeight": 720,
     "latestCompilationDirectory": "",
@@ -78,10 +78,12 @@
       "showWatermark": false
     },
     "authorIds": [
-      "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2"
+      "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2",
+      "e4yFMn69C7b45QtnJD5cYqkOphx1"
     ],
     "authorUsernames": [
-      "GhostxDev"
+      "GhostxDev",
+      "Opasiak1"
     ],
     "categories": [],
     "playableDevices": [
@@ -5187,6 +5189,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/googleplaygamesextension"
     }
   ],
   "externalLayouts": []

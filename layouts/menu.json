@@ -2378,7 +2378,7 @@
         }
       ],
       "content": {
-        "text": "[size=40][b]Dziękujemy, że grasz w [color=orange]Path of fare[/color]![/b][/size]\n\n[i]To dzięki Tobie ten świat żyje.  \nTwój czas, energia i emocje naprawdę się liczą.[/i]\n\n[color=gray]Stworzyliśmy tę grę z sercem –  \ndla Ciebie, Graczu.[/color]\n\n[b][color=green]Miłej zabawy![/color][/b] 💚\n\n[i]Zespół [b]Bober Dev[/b]:[/i]\n\n\n[b]Ghost[/b],[b]Pstrys[/b] – Game Designer  \n[b]NN[/b] – Lead Artist  \n[b]Ghost[/b] – Programmer  \n[b]Ghost[/b] – Music & Sound  \n[b]Ghost[/b],[b]Pstrys[/b] – Writer & Narrative Design",
+        "text": "[size=40][b]Dziękujemy, że grasz w [color=orange]Path of fare[/color]![/b][/size]\n\n[i]To dzięki Tobie ten świat żyje.  \nTwój czas, energia i emocje naprawdę się liczą.[/i]\n\n[color=gray]Stworzyliśmy tę grę z sercem –  \ndla Ciebie, Graczu.[/color]\n\n[b][color=green]Miłej zabawy![/color][/b] 💚\n\n[i]Zespół [b]Cobalt Peace Studio[/b]:[/i]\n\n\n[b]Ghost[/b],[b]Pstrys[/b] – Game Designer  \n[b]NN[/b] – Lead Artist  \n[b]Ghost[/b] – Programmer  \n[b]Ghost[/b] – Music & Sound  \n[b]Ghost[/b],[b]Pstrys[/b] – Writer & Narrative Design",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -3303,9 +3303,10 @@
         },
         {
           "type": {
-            "value": "PlayerAuthentication::DisplayAuthenticationBanner"
+            "value": "GooglePlayGamesExtension::SignIn"
           },
           "parameters": [
+            "",
             ""
           ]
         }

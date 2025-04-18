@@ -20428,7 +20428,6 @@
       "comment": "Portal koniec"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -20495,7 +20494,7 @@
             "if (savedLvly) {",
             "  lvlyArray = JSON.parse(savedLvly)",
             "}",
-            "if(lvlyArray[0]){",
+            "if(lvlyArray[1]){",
             "    lvlyArray.push(true);  // Nowy poziom aktywny",
             "    console.log(\"Stan lvly po dodaniu nowego poziomu: \", lvlyArray);",
             "",
