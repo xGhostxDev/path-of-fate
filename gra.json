@@ -5139,7 +5139,11 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/lvl01"
+      "referenceTo": "/layouts/lvl1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lvl2"
     }
   ],
   "externalEvents": [],
