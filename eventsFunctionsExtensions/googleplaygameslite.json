@@ -1,0 +1,328 @@
+{
+  "author": "ChatGPT",
+  "category": "Cordova",
+  "extensionNamespace": "",
+  "fullName": "Google Play Games",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "GooglePlayGamesLite",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "1.1.0",
+  "description": "Integracja z Google Play Games: logowanie, leaderboardy, osiągnięcia",
+  "tags": [],
+  "authorIds": [
+    "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2"
+  ],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [
+    {
+      "name": "wynikscore",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "idtab",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "idtab2",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "osgid",
+      "type": "string",
+      "value": ""
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "description": "Loguje użytkownika przez Google Play Games",
+      "fullName": "Zaloguj do Google Play Games",
+      "functionType": "Action",
+      "group": "Atuh",
+      "name": "LoginToGooglePlay",
+      "sentence": "Zaloguj użytkownika do Google Play Games",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "cordova.plugins.playGamesServices.auth(",
+            "  function () {",
+            "    // On logged in",
+            "  },",
+            "  function () {",
+            "    // On not logged in",
+            "  }",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "group": "Atuh",
+      "name": "Zaloguj_Play",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.setBackgroundColor(100,100,240);",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "group": "Atuh",
+      "name": "Wyloguj_play",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.setBackgroundColor(100,100,240);",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "Wyniki wyslij",
+      "functionType": "Action",
+      "group": "Google Play Games",
+      "name": "wyslyjwynik",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "wynikscore",
+                "=",
+                "GetArgumentAsNumber(\"score\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "idtab",
+                "=",
+                "GetArgumentAsString(\"id\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "var data = {",
+            "  score: runtimeScene.getVariables('wynikscore'),",
+            "  leaderboardId: runtimeScene.getVariables('idtab'),",
+            "};",
+            "cordova.plugins.playGamesServices.submitScore(",
+            "  data,",
+            "  function () {",
+            "    // On success",
+            "  },",
+            "  function () {",
+            "    // On error",
+            "  }",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": [
+        {
+          "description": "ID",
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "description": "Wynik",
+          "name": "score",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Wyświetla interfejs leaderboardów Google Play",
+      "fullName": "Pokaż wszystkie leaderboardy",
+      "functionType": "Action",
+      "group": "Google Play Games",
+      "name": "ShowLeaderboard",
+      "sentence": "Pokaż leaderboard _PARAM1_ Google Play ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "idtab2",
+                "=",
+                "GetArgumentAsString(\"id2\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "cordova.plugins.playGamesServices.showLeaderboard(",
+            "  runtimeScene.getVariables('idtab2'),",
+            "  function () {",
+            "    // On success",
+            "  },",
+            "  function () {",
+            "    // On error",
+            "  }",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [
+        {
+          "description": "id",
+          "name": "id2",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "Odblokuj osiagniecie",
+      "functionType": "Action",
+      "group": "Google Play Games",
+      "name": "odblokuj_osiagniecie",
+      "sentence": "idosg id",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "osgid",
+                "=",
+                "GetArgumentAsString(\"osgid\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "var data = {",
+            "  achievementId: runtimeScene.getVariables('osgid'),",
+            "};",
+            "",
+            "cordova.plugins.playGamesServices.unlockAchievement(",
+            "  data,",
+            "  function () {",
+            "    // On success",
+            "  },",
+            "  function () {",
+            "    // On error",
+            "  }",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [
+        {
+          "description": "ID",
+          "name": "osgid3",
+          "type": "string"
+        },
+        {
+          "description": "ID osg",
+          "name": "Parameter2",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Wyświetla interfejs osiągnięć",
+      "fullName": "Pokaż wszystkie osiągnięcia",
+      "functionType": "Action",
+      "group": "Google Play Games",
+      "name": "ShowAchievements",
+      "sentence": "Pokaż osiągnięcia Google Play",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "cordova.plugins.playGamesServices.showAchievements(",
+            "  function () {",
+            "    // On success",
+            "  },",
+            "  function () {",
+            "    // On error",
+            "  }",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}

@@ -12,19 +12,19 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
     "orientation": "landscape",
-    "packageName": "com.gkrsd.pof",
+    "packageName": "com.GKRSD.rpgpeace",
     "pixelsRounding": false,
     "projectUuid": "98afaff0-b2c8-4793-8edf-6033c314f3c2",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "Path of Fare",
+    "name": "Path of Fate",
     "description": "",
     "author": "Cobalt Peace Studio",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "F:\\apk\\exportpof",
     "maxFPS": 60,
     "minFPS": 30,
     "verticalSync": false,
@@ -5661,6 +5661,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/googleplaygameslite"
     }
   ],
   "externalLayouts": []

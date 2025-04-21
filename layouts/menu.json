@@ -129,6 +129,9 @@
         },
         {
           "name": "autorzyBTN"
+        },
+        {
+          "name": "osg"
         }
       ]
     }
@@ -506,7 +509,7 @@
       "name": "autorzyBTN",
       "persistentUuid": "e2ecb676-a33c-46a5-a774-555ea44b7435",
       "width": 0,
-      "x": 366,
+      "x": 365,
       "y": 35,
       "zOrder": 24,
       "numberProperties": [],
@@ -637,6 +640,23 @@
       "x": 1095,
       "y": 435,
       "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "osg",
+      "persistentUuid": "3f7cc187-1f94-4eb4-82f4-fb0374c0cd2c",
+      "width": 242,
+      "x": 702,
+      "y": 35,
+      "zOrder": 33,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3143,6 +3163,90 @@
           "width": 256
         }
       }
+    },
+    {
+      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+      "name": "osg",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 4,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Hovered.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Idle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Osiągniecia",
+          "font": "CarterOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Osiągniecia",
+            "font": "CarterOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Pressed.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3234,6 +3338,9 @@
         "folderName": "Menu",
         "children": [
           {
+            "objectName": "osg"
+          },
+          {
             "objectName": "graj"
           },
           {
@@ -3306,6 +3413,15 @@
             "value": "PlayerAuthentication::DisplayAuthenticationBanner"
           },
           "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::LoginToGooglePlay"
+          },
+          "parameters": [
+            "",
             ""
           ]
         }
@@ -3754,6 +3870,31 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "osg",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::ShowAchievements"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
