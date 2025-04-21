@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4789341884535264,
+    "zoomFactor": 0.529035740215685,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -454,24 +454,6 @@
       "persistentUuid": "2c55b9b4-bbd0-4e16-a2e0-548fe0d39b2b",
       "width": 408,
       "x": 2438,
-      "y": 621,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "flippedX": true,
-      "height": 102,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "0c03f36c-d2e6-4cf7-88be-fbc12afa6630",
-      "width": 408,
-      "x": 2837,
       "y": 621,
       "zOrder": 21,
       "numberProperties": [],
@@ -20061,6 +20043,16 @@
           "parameters": [
             "",
             "\"Menu\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Leaderboards::SaveConnectedPlayerScore"
+          },
+          "parameters": [
+            "",
+            "\"54985b6d-63b0-428c-a908-9bd66a960993\"",
+            "czasInt"
           ]
         }
       ],

@@ -3303,10 +3303,9 @@
         },
         {
           "type": {
-            "value": "GooglePlayGamesExtension::SignIn"
+            "value": "PlayerAuthentication::DisplayAuthenticationBanner"
           },
           "parameters": [
-            "",
             ""
           ]
         }
