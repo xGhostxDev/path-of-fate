@@ -5581,6 +5581,14 @@
         "name": "assets\\Loga\\ios-icon-87.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Merged Full Background1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Merged Full Background1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5622,6 +5630,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/lvl2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lvl3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lvl4"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lvl5"
     }
   ],
   "externalEvents": [],
@@ -5665,6 +5685,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/googleplaygameslite"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedjump"
     }
   ],
   "externalLayouts": []

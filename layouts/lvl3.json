@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "lvl1",
-  "name": "lvl1",
+  "mangledName": "lvl3",
+  "name": "lvl3",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210186,
+    "zoomFactor": 0.5653158055126322,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -59,28 +59,11 @@
       "height": 82,
       "keepRatio": true,
       "layer": "",
-      "name": "Tile8",
-      "persistentUuid": "2f2116e1-f4d4-457f-9e64-f483cb198330",
-      "width": 318,
-      "x": 0,
-      "y": 640,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 82,
-      "keepRatio": true,
-      "layer": "",
       "name": "Player",
       "persistentUuid": "8995e633-f282-4f7d-a02e-2c7dbce08e2e",
       "width": 98,
-      "x": 16,
-      "y": 554,
+      "x": 11,
+      "y": 97,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -112,60 +95,9 @@
       "name": "jumpbtn",
       "persistentUuid": "93b7b9a8-7944-4f72-b9f2-010f4015fbff",
       "width": 81,
-      "x": 1154,
-      "y": 610,
+      "x": 1156,
+      "y": 623,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 86,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "0728fa30-411a-47e1-9716-5e196fbd827c",
-      "width": 180,
-      "x": 296,
-      "y": 639,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 84,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile9",
-      "persistentUuid": "4cd6efa7-9bf3-49ef-9dde-4b13d7e33608",
-      "width": 212,
-      "x": 473,
-      "y": 639,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 91,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile29",
-      "persistentUuid": "b851090d-13d9-4ed7-9889-acf0d898ebb8",
-      "width": 259,
-      "x": 1015,
-      "y": 620,
-      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -190,57 +122,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 75,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Bridge",
-      "persistentUuid": "b0c5f68b-5d8d-479b-a167-9b9fe95afbd8",
-      "width": 666,
-      "x": 1277,
-      "y": 620,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0.962962962962963,
-      "height": 130,
-      "layer": "",
-      "name": "BridgeHandle",
-      "persistentUuid": "1a9bf11d-3c95-4805-b29a-5c5957050204",
-      "width": 125.18518518518519,
-      "x": 1168,
-      "y": 498,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "flippedX": true,
-      "height": 130,
-      "keepRatio": true,
-      "layer": "",
-      "name": "BridgeHandle",
-      "persistentUuid": "00088c74-579a-4b73-b852-7fd8d7fa40ec",
-      "width": 130,
-      "x": 1914,
-      "y": 509,
-      "zOrder": 22,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 48,
       "height": 73,
       "keepRatio": true,
@@ -248,8 +129,8 @@
       "name": "AtakBTN",
       "persistentUuid": "37e25f34-dd9a-4fbf-b2f2-91ad196be32e",
       "width": 83,
-      "x": 1030,
-      "y": 610,
+      "x": 1045,
+      "y": 623,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -268,23 +149,6 @@
       "x": 10,
       "y": 40,
       "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 38,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Key",
-      "persistentUuid": "77c13139-b898-409d-91fc-507a61112455",
-      "width": 39,
-      "x": 480,
-      "y": 601,
-      "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -316,7 +180,7 @@
       "name": "MergedFullBackground",
       "persistentUuid": "9ad5e41c-05d6-49b5-aa03-42bff66273ba",
       "width": 2582,
-      "x": 3453,
+      "x": 3457,
       "y": -71,
       "zOrder": 1,
       "numberProperties": [],
@@ -359,18 +223,101 @@
     },
     {
       "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Portal",
+      "persistentUuid": "36398d69-b0af-4109-829c-d1983093731a",
+      "width": 0,
+      "x": 10306,
+      "y": -76,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": true,
       "depth": 1,
-      "flippedX": true,
-      "height": 102,
+      "height": 790,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MergedFullBackground",
+      "persistentUuid": "f9584a86-ffa2-476a-9295-917d64e0f049",
+      "width": 2582,
+      "x": 3453,
+      "y": -71,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 56,
       "keepRatio": true,
       "layer": "",
       "name": "Tile17",
-      "persistentUuid": "59977100-afe9-4431-9e0c-b47236e03921",
-      "width": 408,
-      "x": 9325,
-      "y": 201,
-      "zOrder": 21,
+      "persistentUuid": "c183c1c7-7bde-4ac1-af91-a840253d33c0",
+      "width": 201,
+      "x": 10333,
+      "y": 181,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 790,
+      "layer": "",
+      "name": "CaveBackground",
+      "persistentUuid": "d64a1146-ab36-44ae-b9e3-6cc62d1951a4",
+      "width": 2582,
+      "x": 1730,
+      "y": -70,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 86,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CaveEntrance",
+      "persistentUuid": "f461aece-843a-44d6-96c1-0d2bfd3bf8b2",
+      "width": 2574,
+      "x": 1739,
+      "y": 636,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "flippedY": true,
+      "height": 86,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CaveEntrance",
+      "persistentUuid": "ccec3c23-03dd-4fbc-8dcb-93cd77cdba9f",
+      "width": 2574,
+      "x": 1729,
+      "y": -71,
+      "zOrder": 40,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -381,12 +328,28 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Portal",
-      "persistentUuid": "36398d69-b0af-4109-829c-d1983093731a",
+      "name": "CaveBackgroundHole",
+      "persistentUuid": "bc495ffd-1384-4563-8e3c-4b14f013f54a",
       "width": 0,
-      "x": 9467,
-      "y": 7,
-      "zOrder": 3,
+      "x": 1851,
+      "y": 88,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CaveBackgroundHole",
+      "persistentUuid": "67f1288f-9b5d-4fe1-b0f5-ffb3e3b57e69",
+      "width": 0,
+      "x": 2923,
+      "y": 487,
+      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -395,15 +358,376 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 115,
+      "height": 790,
+      "layer": "",
+      "name": "CaveBackground",
+      "persistentUuid": "4728200e-1490-4b12-887b-c195cfabf3b9",
+      "width": 2828,
+      "x": 4063,
+      "y": -69,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "flippedX": true,
+      "flippedY": true,
+      "height": 86,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CaveEntrance",
+      "persistentUuid": "8fa264e1-cd15-41d5-a0f6-30fc6dbf532c",
+      "width": 2574,
+      "x": 4300,
+      "y": -68,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "flippedX": true,
+      "height": 86,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CaveEntrance",
+      "persistentUuid": "11d6592e-6e95-4827-a7a5-7638c3ab3c5f",
+      "width": 2574,
+      "x": 4309,
+      "y": 637,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "5b39cdc5-a019-4a7d-bc10-0b8bb72ee3cf",
+      "width": 217,
+      "x": 1636,
+      "y": 620,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "a8ff1b1d-1f46-4eb9-acc0-798c3d447bfa",
+      "width": 182,
+      "x": 1647,
+      "y": -82,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "a41cde9e-71fb-434e-bc55-268e0a10f068",
+      "width": 217,
+      "x": 2024,
+      "y": 425,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "0aea2918-f3eb-4959-9fdd-bf43f3fb95c8",
+      "width": 217,
+      "x": 2518,
+      "y": 426,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "1c33cf17-f3d3-4c59-a16a-8d5edd9c158a",
+      "width": 217,
+      "x": 2990,
+      "y": 241,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "e9f28f74-a2a5-4da5-b928-255a1ffcca2a",
+      "width": 217,
+      "x": 3431,
+      "y": 588,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "cf8d91f2-66a1-4954-a8d8-ac144a0f0120",
+      "width": 532,
+      "x": 3889,
+      "y": 396,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 111,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Mushrooms",
+      "persistentUuid": "15fed471-d423-403a-acde-03a3a1c73487",
+      "width": 102,
+      "x": 4103,
+      "y": 287,
+      "zOrder": 44,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "88d5e1b9-13c3-48db-a342-8d85a1389349",
+      "width": 217,
+      "x": 4767,
+      "y": 390,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "0ca2e403-8f90-47ff-b7e0-cce94c6d1d71",
+      "width": 217,
+      "x": 5419,
+      "y": 388,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "1c48844f-732c-48c3-a419-70caa27ba45b",
+      "width": 217,
+      "x": 6439,
+      "y": 442,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "2b0ec099-01f1-4bbf-9395-05b9374eb313",
+      "width": 217,
+      "x": 6038,
+      "y": 590,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "68ddc542-6f6a-4e1b-a385-b360da657577",
+      "width": 217,
+      "x": 6028,
+      "y": 122,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 104,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile2",
+      "persistentUuid": "8fe99db2-8d5d-4dbf-8459-6c042e4bce28",
+      "width": 217,
+      "x": 6978,
+      "y": 449,
+      "zOrder": 43,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 89,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Alchemist",
+      "persistentUuid": "1657f118-a6a4-4e76-bf29-f976fdd925ce",
+      "width": 89,
+      "x": 6074,
+      "y": 28,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "flippedX": true,
+      "height": 89,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Alchemist",
+      "persistentUuid": "9cda6bd1-76d4-4aad-90ff-931be854ad8d",
+      "width": 89,
+      "x": 5486,
+      "y": 299,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "flippedX": true,
+      "height": 89,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Alchemist",
+      "persistentUuid": "59318907-ffdc-4774-aca9-b8f7aebc7bce",
+      "width": 89,
+      "x": 3091,
+      "y": 153,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 109,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tile17",
+      "persistentUuid": "4ce931ff-2b7a-4f43-ba78-bb5fa9ae7180",
+      "width": 1360,
+      "x": -43,
+      "y": 625,
+      "zOrder": 46,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 107,
       "keepRatio": true,
       "layer": "",
       "name": "Builder1",
-      "persistentUuid": "a5b842d8-99a0-406f-8a99-494b58537ad0",
-      "width": 73,
-      "x": 387,
-      "y": 525,
-      "zOrder": 29,
+      "persistentUuid": "7465416e-557f-404d-b961-012539597a92",
+      "width": 100,
+      "x": 586,
+      "y": 521,
+      "zOrder": 47,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -412,15 +736,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 91,
+      "height": 36,
       "keepRatio": true,
       "layer": "",
-      "name": "Tile29",
-      "persistentUuid": "cb78a761-5076-4376-b552-d506fd7021b8",
-      "width": 259,
-      "x": 1975,
-      "y": 620,
-      "zOrder": 17,
+      "name": "Key",
+      "persistentUuid": "33e6ef8f-7ddd-4efd-8145-36dc02e5304c",
+      "width": 64,
+      "x": 1673,
+      "y": 572,
+      "zOrder": 48,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -429,169 +753,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 147,
-      "keepRatio": true,
-      "layer": "",
-      "name": "GrassForeground",
-      "persistentUuid": "779fa49b-b895-456d-aedd-e31df385ce0d",
-      "width": 188,
-      "x": 9807,
-      "y": 116,
-      "zOrder": 30,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 168,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPillar",
-      "persistentUuid": "31199461-76ef-47e4-a358-a34072ec460d",
-      "width": 50,
-      "x": 2421,
-      "y": 546,
-      "zOrder": 31,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 26,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPlatformTop",
-      "persistentUuid": "f308c6ab-00e3-4e19-9ad3-5b12e2af8c31",
-      "width": 251,
-      "x": 2323,
-      "y": 533,
-      "zOrder": 32,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 268,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPillar",
-      "persistentUuid": "746ee7dd-1e50-4a7a-88f6-eb7bd1366fa3",
-      "width": 50,
-      "x": 2781,
-      "y": 459,
-      "zOrder": 31,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 26,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPlatformTop",
-      "persistentUuid": "45b0ebb4-9d0a-4a02-8e9a-1e72c60aba31",
-      "width": 251,
-      "x": 2689,
-      "y": 456,
-      "zOrder": 32,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 268,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPillar",
-      "persistentUuid": "fa2c1c98-ae6d-46f3-959c-8626fd6deb2d",
-      "width": 50,
-      "x": 3429,
-      "y": 511,
-      "zOrder": 31,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 26,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPlatformTop",
-      "persistentUuid": "86b84a82-b5bf-41ee-87ea-8035189e2204",
-      "width": 251,
-      "x": 3333,
-      "y": 507,
-      "zOrder": 32,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 26,
-      "keepRatio": true,
-      "layer": "",
-      "name": "WoodPlatformTop",
-      "persistentUuid": "d0de19c7-a9e3-4bcb-8c91-482c34cb19d5",
-      "width": 389,
-      "x": 3894,
-      "y": 495,
-      "zOrder": 32,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "flippedX": true,
-      "height": 81,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Alchemist",
-      "persistentUuid": "dad71554-f5d3-42eb-869c-8a73dac4e3d9",
-      "width": 63,
-      "x": 3955,
-      "y": 409,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 123,
+      "height": 83,
       "keepRatio": true,
       "layer": "",
       "name": "Chest",
-      "persistentUuid": "f19ff08b-422f-4e28-bb89-0aea47df8977",
-      "width": 128,
-      "x": 4121,
-      "y": 373,
-      "zOrder": 33,
+      "persistentUuid": "11a7bd46-c588-48ba-93e8-93caf8079445",
+      "width": 93,
+      "x": 7038,
+      "y": 368,
+      "zOrder": 49,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -600,15 +770,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 79,
+      "height": 22,
       "keepRatio": true,
       "layer": "",
-      "name": "Tile11",
-      "persistentUuid": "57c478d9-23ef-42e5-8a26-8795e3fe4310",
-      "width": 814,
-      "x": 4587,
-      "y": 641,
-      "zOrder": 34,
+      "name": "WoodPlatformTop",
+      "persistentUuid": "469cd5be-4d0c-4d93-8ab6-940fc5c89381",
+      "width": 286,
+      "x": 7471,
+      "y": 449,
+      "zOrder": 50,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -617,16 +787,66 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "flippedY": true,
-      "height": 52,
+      "height": 22,
       "keepRatio": true,
       "layer": "",
-      "name": "Tile13",
-      "persistentUuid": "fdb2fc63-f1e9-42de-bf99-e6d113c6ff04",
-      "width": 256,
-      "x": 5455,
-      "y": 520,
-      "zOrder": 35,
+      "name": "WoodPlatformTop",
+      "persistentUuid": "69128f16-fdb8-432b-82f9-9a4622465cb1",
+      "width": 286,
+      "x": 7915,
+      "y": 298,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 22,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WoodPlatformTop",
+      "persistentUuid": "21f7ba47-e309-4c57-9209-a2b0aef1099e",
+      "width": 286,
+      "x": 8544,
+      "y": 302,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 22,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WoodPlatformTop",
+      "persistentUuid": "313e883b-1d9f-4ee5-b960-1bb4f7a65d4c",
+      "width": 286,
+      "x": 9091,
+      "y": 305,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 22,
+      "keepRatio": true,
+      "layer": "",
+      "name": "WoodPlatformTop",
+      "persistentUuid": "0f915906-5e2d-457f-847d-ac3b10385af2",
+      "width": 286,
+      "x": 9874,
+      "y": 211,
+      "zOrder": 50,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -636,260 +856,15 @@
       "customSize": true,
       "depth": 1,
       "flippedX": true,
-      "flippedY": true,
-      "height": 52,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile13",
-      "persistentUuid": "997dd5a1-36d8-4ad6-8362-7291d92061ae",
-      "width": 256,
-      "x": 5707,
-      "y": 520,
-      "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "flippedY": true,
-      "height": 52,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile13",
-      "persistentUuid": "888f1a0a-ac7d-4148-bb28-d3b6ada843e2",
-      "width": 256,
-      "x": 6066,
-      "y": 457,
-      "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "flippedX": true,
-      "flippedY": true,
-      "height": 52,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile13",
-      "persistentUuid": "fa3013a2-3477-4939-9343-e13b6102b1a4",
-      "width": 256,
-      "x": 6322,
-      "y": 457,
-      "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 119,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile35",
-      "persistentUuid": "e269b79b-d60f-4618-9c1f-70655302eaea",
-      "width": 349,
-      "x": 6813,
-      "y": 508,
-      "zOrder": 36,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "flippedX": true,
-      "flippedY": true,
-      "height": 122,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile13",
-      "persistentUuid": "29b8e81d-2640-40bb-8986-34d6c2f81858",
-      "width": 341,
-      "x": 7152,
-      "y": 508,
-      "zOrder": 35,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 73,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "051f8d94-0b03-485c-869a-5c4d37635804",
-      "width": 332,
-      "x": 7719,
-      "y": 536,
-      "zOrder": 37,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 73,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "ddffdd8e-2a9c-4dc3-949b-e08b1387173e",
-      "width": 332,
-      "x": 8391,
-      "y": 334,
-      "zOrder": 37,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 73,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "2a659a46-5fae-4b17-a3d5-0305524ea1c5",
-      "width": 332,
-      "x": 8340,
-      "y": 624,
-      "zOrder": 37,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 73,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "ac34217e-1901-4be4-965f-963cf0d792f9",
-      "width": 332,
-      "x": 9408,
-      "y": 629,
-      "zOrder": 37,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 73,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile17",
-      "persistentUuid": "c1cf4268-cc93-48ce-aca3-44128babc0e7",
-      "width": 332,
-      "x": 10213,
-      "y": 454,
-      "zOrder": 37,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 94,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile29",
-      "persistentUuid": "08f3f739-e121-4497-a835-54593f776ca9",
-      "width": 321,
-      "x": 9870,
-      "y": 610,
-      "zOrder": 38,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 94,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile29",
-      "persistentUuid": "95c7df84-0d7c-4a0d-90fc-f1764c7dffda",
-      "width": 321,
-      "x": 8891,
-      "y": 609,
-      "zOrder": 38,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 71,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile29",
-      "persistentUuid": "a55087e0-7189-4dfb-9432-74ec49bb73bf",
-      "width": 321,
-      "x": 9804,
-      "y": 264,
-      "zOrder": 38,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 94,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Tile29",
-      "persistentUuid": "2eb2eecf-ec53-4781-b81e-28b603e1fa75",
-      "width": 344,
-      "x": 7717,
-      "y": 517,
-      "zOrder": 38,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "flippedX": true,
-      "height": 79,
+      "height": 120,
       "keepRatio": true,
       "layer": "",
       "name": "Alchemist",
-      "persistentUuid": "ea1bfe35-4b78-466c-9349-1ed263c8e878",
-      "width": 64,
-      "x": 8617,
-      "y": 252,
-      "zOrder": 39,
+      "persistentUuid": "c9a889f1-cf7f-41f5-a7d3-0431dbf6ab8c",
+      "width": 84,
+      "x": 10013,
+      "y": 98,
+      "zOrder": 51,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -903,11 +878,11 @@
       "keepRatio": true,
       "layer": "",
       "name": "Alchemist",
-      "persistentUuid": "f7093ef8-8cd6-43e8-8dfb-5a94b2bdcd41",
-      "width": 63,
-      "x": 5222,
-      "y": 556,
-      "zOrder": 15,
+      "persistentUuid": "6f7cfe4c-78d7-4c56-82c6-20ce28225e52",
+      "width": 79,
+      "x": 8751,
+      "y": 216,
+      "zOrder": 52,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -916,16 +891,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "flippedX": true,
-      "height": 81,
+      "height": 112,
       "keepRatio": true,
       "layer": "",
-      "name": "Alchemist",
-      "persistentUuid": "28775155-193f-4c56-865f-0982ac48204e",
-      "width": 63,
-      "x": 9344,
-      "y": 124,
-      "zOrder": 15,
+      "name": "Checkpoint",
+      "persistentUuid": "a7506bcc-1037-4ffa-88bf-ee15f5902262",
+      "width": 52,
+      "x": 6507,
+      "y": 337,
+      "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -934,15 +908,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 122,
+      "height": 22,
       "keepRatio": true,
       "layer": "",
-      "name": "Builder3",
-      "persistentUuid": "25a8a6c9-354a-4402-b028-039a9245571c",
-      "width": 92,
-      "x": 5652,
-      "y": 401,
-      "zOrder": 40,
+      "name": "WoodPlatformTop",
+      "persistentUuid": "df81b21b-9b18-4860-b693-b3296b0796b6",
+      "width": 286,
+      "x": 9522,
+      "y": 302,
+      "zOrder": 50,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2777,7 +2751,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -2957,7 +2939,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -15745,7 +15735,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -19203,282 +19201,6 @@
           ]
         }
       ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "7d9c0585bf1f125a39b7a37a089fd3ae5c0dc39ed84064a3eae605249c9b5803",
-      "name": "Builder3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Working",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Builder 1_Working_7.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 8
-                      },
-                      {
-                        "x": 21,
-                        "y": 24
-                      },
-                      {
-                        "x": 4,
-                        "y": 24
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "objectsFolderStructure": {
@@ -19737,9 +19459,6 @@
       },
       {
         "objectName": "Builder1"
-      },
-      {
-        "objectName": "Builder3"
       },
       {
         "objectName": "Builder2"
@@ -20412,7 +20131,7 @@
                 "tesktgosciu",
                 "Text",
                 "=",
-                "\"Ah, a new traveler... I see the fire of adventure in your eyes.\""
+                "\"The shadows grow darker ahead... but so does your strength.\""
               ]
             }
           ]
@@ -20790,7 +20509,7 @@
             "if (savedLvly) {",
             "  lvlyArray = JSON.parse(savedLvly)",
             "}",
-            "if(lvlyArray[1]){",
+            "if(lvlyArray[2]){",
             "    lvlyArray.push(true);  // Nowy poziom aktywny",
             "    console.log(\"Stan lvly po dodaniu nowego poziomu: \", lvlyArray);",
             "",
@@ -20932,6 +20651,42 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Mushrooms",
+            "Player",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "11",
+            "=",
+            "97"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
