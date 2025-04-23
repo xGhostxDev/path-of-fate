@@ -14221,10 +14221,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -20619,7 +20619,7 @@
             "if (savedLvly) {",
             "  lvlyArray = JSON.parse(savedLvly)",
             "}",
-            "if(lvlyArray[2]){",
+            "if(lvlyArray[3]){",
             "    lvlyArray.push(true);  // Nowy poziom aktywny",
             "    console.log(\"Stan lvly po dodaniu nowego poziomu: \", lvlyArray);",
             "",

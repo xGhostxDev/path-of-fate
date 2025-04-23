@@ -20,7 +20,7 @@
     "templateSlug": "",
     "version": "1.0.0",
     "name": "Path of Fate",
-    "description": "",
+    "description": "Path of Fate to intensywna platformówka w której każde Twoje działanie dosłownie zapisuje nowy wątek fabuły. Budzisz się jako Nieznany Wędrowiec na pękniętym, dryfującym archipelagu, a jedyną wskazówką jest pulsujący fioletowy kryształ.",
     "author": "Cobalt Peace Studio",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -78,14 +78,16 @@
       "showWatermark": false
     },
     "authorIds": [
-      "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2",
-      "e4yFMn69C7b45QtnJD5cYqkOphx1"
+      "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2"
     ],
     "authorUsernames": [
-      "GhostxDev",
-      "Opasiak1"
+      "GhostxDev"
     ],
-    "categories": [],
+    "categories": [
+      "adventure",
+      "platformer",
+      "multiplayer"
+    ],
     "playableDevices": [
       "mobile"
     ],

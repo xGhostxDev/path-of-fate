@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.46331118245139796,
+    "zoomFactor": 0.49508400737488906,
     "windowMask": false
   },
   "objectsGroups": [
@@ -3407,23 +3407,6 @@
           "parameters": [
             "czasy"
           ]
-        },
-        {
-          "type": {
-            "value": "PlayerAuthentication::DisplayAuthenticationBanner"
-          },
-          "parameters": [
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "GooglePlayGamesLite::LoginToGooglePlay"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
         }
       ]
     },
@@ -3721,58 +3704,31 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "const buttons = runtimeScene.getObjects(\"Lvlbtny\");",
+            "const maxBTN = 12;",
             "",
-            "buttons.forEach(btn => {",
-            "    if (",
-            "        btn.isVisible() && // ✅ musi być widoczny",
-            "        btn.cursorOnObject(runtimeScene) &&",
-            "        gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, \"Left\")",
-            "    ) {",
-            "        const name = btn.getName(); // np. \"btn2\"",
-            "        const levelNumber = name.replace(\"lvl\", \"\"); // wyciągamy numer",
-            "        const sceneName = \"lvl\" + levelNumber; // np. \"lvl2\"",
-            "        gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, sceneName, false);",
+            "for (let i = 1; i <= maxBTN; i++) {",
+            "  const objectName = \"lvl\" + i;                 // \"lvl1\"...\"lvl12\"",
+            "  const btnArray   = runtimeScene.getObjects(objectName);",
+            "  if (btnArray.length === 0) continue;          // brak instancji",
+            "",
+            "  btnArray.forEach(btn => {",
+            "    if (!btn.isVisible()) return;               // ukryte pomiń",
+            "",
+            "    const overBtn = btn.cursorOnObject(runtimeScene)",
+            "    const clicked = overBtn && gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, \"Left\");",
+            "    const tapped  = overBtn && gdjs.evtTools.input.hasTouchEnded(runtimeScene);",
+            "",
+            "    if (clicked || tapped) {",
+            "      console.log(`Kliknięto ${objectName}`);   // tu już masz nazwę!",
+            "        ",
+            "      gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, objectName, false);",
             "    }",
-            "});"
+            "  });",
+            "}"
           ],
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "lvl1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Visible"
-              },
-              "parameters": [
-                "lvl1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"lvl0\"",
-                "yes"
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
@@ -3810,7 +3766,7 @@
             "",
             "  const buttons = runtimeScene.getObjects(objectName);",
             "",
-            "  console.log(`Sprawdzam: ${objectName} (lvly[${index}]) → aktywny: ${isActive}`);",
+            "  //console.log(`Sprawdzam: ${objectName} (lvly[${index}]) → aktywny: ${isActive}`);",
             "",
             "  for (const btn of buttons) {",
             "    if (!isActive) {",
@@ -3895,6 +3851,41 @@
           ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Logowanie",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlayerAuthentication::IsPlayerAuthenticated"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "await": true,
+                "value": "PlayerAuthentication::OpenAuthenticationWindow"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
