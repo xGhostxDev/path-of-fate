@@ -3491,6 +3491,14 @@
             "autorzyBTN",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "autorzyBTN"
+          ]
         }
       ],
       "actions": [
@@ -3838,6 +3846,14 @@
             "osg",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "osg"
+          ]
         }
       ],
       "actions": [
@@ -3875,7 +3891,6 @@
           "actions": [
             {
               "type": {
-                "await": true,
                 "value": "PlayerAuthentication::OpenAuthenticationWindow"
               },
               "parameters": [

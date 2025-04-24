@@ -13031,7 +13031,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "On",
+          "name": "Off",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13040,7 +13040,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Checkpoint_On.png",
+                  "image": "Checkpoint_Off.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -13079,7 +13079,7 @@
           ]
         },
         {
-          "name": "Off",
+          "name": "On",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13088,7 +13088,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Checkpoint_Off.png",
+                  "image": "Checkpoint_On.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

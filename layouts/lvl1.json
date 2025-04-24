@@ -947,6 +947,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 118,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Checkpoint",
+      "persistentUuid": "fdd0f00b-2909-4ce6-85c0-de7456dd4885",
+      "width": 106,
+      "x": 4710,
+      "y": 523,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -13042,7 +13059,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "On",
+          "name": "Off",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13051,7 +13068,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Checkpoint_On.png",
+                  "image": "Checkpoint_Off.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -13090,7 +13107,7 @@
           ]
         },
         {
-          "name": "Off",
+          "name": "On",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13099,7 +13116,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Checkpoint_Off.png",
+                  "image": "Checkpoint_On.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -20305,6 +20322,49 @@
                 "Player",
                 "\"Start\"",
                 "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Checkpoint",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Checkpoint",
+                "Animation",
+                "=",
+                "\"On\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Checkpoints::SaveCheckpoint"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "Player.X()",
+                "Player.Y()",
+                "\"Start\"",
                 ""
               ]
             }

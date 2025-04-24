@@ -106,14 +106,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 48,
-      "height": 72,
-      "keepRatio": true,
+      "height": 150,
       "layer": "UI",
       "name": "jumpbtn",
       "persistentUuid": "93b7b9a8-7944-4f72-b9f2-010f4015fbff",
-      "width": 81,
+      "width": 150,
       "x": 1156,
-      "y": 623,
+      "y": 600,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -139,15 +138,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 73,
-      "keepRatio": true,
+      "depth": 86.74698795180724,
+      "height": 150,
       "layer": "UI",
       "name": "AtakBTN",
       "persistentUuid": "37e25f34-dd9a-4fbf-b2f2-91ad196be32e",
-      "width": 83,
-      "x": 1045,
-      "y": 623,
+      "width": 150,
+      "x": 1000,
+      "y": 600,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -798,6 +796,23 @@
       "x": 10326,
       "y": 590,
       "zOrder": 51,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 110,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Checkpoint",
+      "persistentUuid": "ec2e447c-d5fd-4a89-8adf-2e6182e8c4c9",
+      "width": 70,
+      "x": 3490,
+      "y": 158,
+      "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -12948,7 +12963,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "On",
+          "name": "Off",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -12957,7 +12972,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Checkpoint_On.png",
+                  "image": "Checkpoint_Off.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -12996,7 +13011,7 @@
           ]
         },
         {
-          "name": "Off",
+          "name": "On",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13005,7 +13020,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Checkpoint_Off.png",
+                  "image": "Checkpoint_On.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -20091,6 +20106,49 @@
                 "Player",
                 "\"Start\"",
                 "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Checkpoint",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Checkpoint",
+                "Animation",
+                "=",
+                "\"On\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Checkpoints::SaveCheckpoint"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "Player.X()",
+                "Player.Y()",
+                "\"Start\"",
                 ""
               ]
             }
