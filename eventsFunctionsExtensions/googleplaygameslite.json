@@ -16,7 +16,13 @@
     "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2"
   ],
   "dependencies": [],
-  "globalVariables": [],
+  "globalVariables": [
+    {
+      "name": "nick",
+      "type": "string",
+      "value": "0"
+    }
+  ],
   "sceneVariables": [
     {
       "name": "wynikscore",
@@ -70,20 +76,83 @@
     },
     {
       "fullName": "",
-      "functionType": "Action",
-      "group": "Atuh",
-      "name": "Zaloguj_Play",
+      "functionType": "StringExpression",
+      "name": "Function",
       "sentence": "",
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "runtimeScene.setBackgroundColor(100,100,240);",
+            "cordova.plugins.playGamesServices.showPlayer(function (playerData) {",
+            "  // playerData is the following object",
+            "  // {",
+            "  //      displayName: string;",
+            "  //      playerId: string;",
+            "  //      title: string;",
+            "  //      iconImageUrl: string;",
+            "  //      hiResIconImageUrl: string;",
+            "  // }",
+            "  console.log(\"Authenticated as \" + playerData.displayName);",
+            "});",
+            "",
             ""
           ],
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "var"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Condition",
+      "group": "Atuh",
+      "name": "SprKonto",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "cordova.plugins.playGamesServices.isSignedIn(",
+            "  function (result) {",
+            "    // ‘result’ is the following object",
+            "    // {",
+            "    //         \"isSignedIn\": boolean",
+            "    // }",
+            "    console.log(\"Is user signed in: \" + result.isSignedIn);",
+            "  },",
+            "  function () {",
+            "    // On error: Auth check could not be done",
+            "  }",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": [],
@@ -99,8 +168,9 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "runtimeScene.setBackgroundColor(100,100,240);",
-            ""
+            "cordova.plugins.playGamesServices.signOut(function () {",
+            "  // On logged out",
+            "});"
           ],
           "parameterObjects": "",
           "useStrict": true,
