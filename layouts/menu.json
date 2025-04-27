@@ -3852,27 +3852,33 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "GooglePlayGamesLite::ShowAchievements"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Logowanie",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
+      "actions": [],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GooglePlayGamesLite::SprKonto"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "GooglePlayGamesLite::ShowAchievements"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -3899,8 +3905,7 @@
             }
           ]
         }
-      ],
-      "parameters": []
+      ]
     }
   ],
   "layers": [

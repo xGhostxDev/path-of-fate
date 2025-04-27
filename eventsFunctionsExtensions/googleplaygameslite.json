@@ -43,6 +43,16 @@
       "name": "osgid",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "Variable",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "makonto",
+      "type": "string",
+      "value": "0"
     }
   ],
   "eventsFunctions": [
@@ -77,7 +87,7 @@
     {
       "fullName": "",
       "functionType": "StringExpression",
-      "name": "Function",
+      "name": "GetKontoPlay",
       "sentence": "",
       "events": [
         {
@@ -139,6 +149,7 @@
             "    //         \"isSignedIn\": boolean",
             "    // }",
             "    console.log(\"Is user signed in: \" + result.isSignedIn);",
+            "    runtimeScene.getVariables().get(\"makonto\").setString(\"tak\");",
             "  },",
             "  function () {",
             "    // On error: Auth check could not be done",
@@ -151,8 +162,53 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "makonto",
+                "=",
+                "\"tak\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "makonto",
+                "!=",
+                "\"tak\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "False"
+              ]
+            }
+          ]
         }
       ],
       "parameters": [],
