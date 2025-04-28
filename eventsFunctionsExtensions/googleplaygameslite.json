@@ -23,38 +23,7 @@
       "value": "0"
     }
   ],
-  "sceneVariables": [
-    {
-      "name": "wynikscore",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "idtab",
-      "type": "string",
-      "value": "0"
-    },
-    {
-      "name": "idtab2",
-      "type": "string",
-      "value": "0"
-    },
-    {
-      "name": "osgid",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "Variable",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "makonto",
-      "type": "string",
-      "value": "0"
-    }
-  ],
+  "sceneVariables": [],
   "eventsFunctions": [
     {
       "description": "Loguje użytkownika przez Google Play Games",
@@ -67,7 +36,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "cordova.plugins.playGamesServices.auth(",
+            "window.plugins.playGamesServices.auth(",
             "  function () {",
             "    // On logged in",
             "  },",
@@ -93,7 +62,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "cordova.plugins.playGamesServices.showPlayer(function (playerData) {",
+            "window.plugins.playGamesServices.showPlayer(function (playerData) {",
             "  // playerData is the following object",
             "  // {",
             "  //      displayName: string;",
@@ -110,20 +79,6 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetReturnString"
-              },
-              "parameters": [
-                "var"
-              ]
-            }
-          ]
         }
       ],
       "expressionType": {
@@ -142,14 +97,14 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "cordova.plugins.playGamesServices.isSignedIn(",
+            "window.plugins.playGamesServices.isSignedIn(",
             "  function (result) {",
             "    // ‘result’ is the following object",
             "    // {",
             "    //         \"isSignedIn\": boolean",
             "    // }",
             "    console.log(\"Is user signed in: \" + result.isSignedIn);",
-            "    runtimeScene.getVariables().get(\"makonto\").setString(\"tak\");",
+            "    eventsFunctionContext.returnValue = true;",
             "  },",
             "  function () {",
             "    // On error: Auth check could not be done",
@@ -159,56 +114,6 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "makonto",
-                "=",
-                "\"tak\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetReturnBoolean"
-              },
-              "parameters": [
-                "True"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "StringVariable"
-              },
-              "parameters": [
-                "makonto",
-                "!=",
-                "\"tak\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetReturnBoolean"
-              },
-              "parameters": [
-                "False"
-              ]
-            }
-          ]
         }
       ],
       "parameters": [],
@@ -224,7 +129,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "cordova.plugins.playGamesServices.signOut(function () {",
+            "window.plugins.playGamesServices.signOut(function () {",
             "  // On logged out",
             "});"
           ],
@@ -244,39 +149,13 @@
       "sentence": "",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "wynikscore",
-                "=",
-                "GetArgumentAsNumber(\"score\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "idtab",
-                "=",
-                "GetArgumentAsString(\"id\")"
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "var data = {",
-            "  score: runtimeScene.getVariables('wynikscore'),",
-            "  leaderboardId: runtimeScene.getVariables('idtab'),",
+            "  score: eventsFunctionContext.getArgument(\"score\"),",
+            "  leaderboardId: eventsFunctionContext.getArgument(\"id\"),",
             "};",
-            "cordova.plugins.playGamesServices.submitScore(",
+            "window.plugins.playGamesServices.submitScore(",
             "  data,",
             "  function () {",
             "    // On success",
@@ -319,26 +198,10 @@
       "sentence": "Pokaż leaderboard _PARAM1_ Google Play ",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "idtab2",
-                "=",
-                "GetArgumentAsString(\"id2\")"
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "cordova.plugins.playGamesServices.showLeaderboard(",
-            "  runtimeScene.getVariables('idtab2'),",
+            "window.plugins.playGamesServices.showLeaderboard(",
+            "  runtimeScene.eventsFunctionContext.getArgument(\"id\"),",
             "  function () {",
             "    // On success",
             "  },",
@@ -355,7 +218,7 @@
       "parameters": [
         {
           "description": "id",
-          "name": "id2",
+          "name": "id",
           "type": "string"
         }
       ],
@@ -388,10 +251,10 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "var data = {",
-            "  achievementId: runtimeScene.getVariables('osgid'),",
+            "  achievementId: eventsFunctionContext.getArgument(\"id\"),",
             "};",
             "",
-            "cordova.plugins.playGamesServices.unlockAchievement(",
+            "window.plugins.playGamesServices.unlockAchievement(",
             "  data,",
             "  function () {",
             "    // On success",
@@ -409,12 +272,7 @@
       "parameters": [
         {
           "description": "ID",
-          "name": "osgid3",
-          "type": "string"
-        },
-        {
-          "description": "ID osg",
-          "name": "Parameter2",
+          "name": "id",
           "type": "string"
         }
       ],
@@ -431,7 +289,7 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "cordova.plugins.playGamesServices.showAchievements(",
+            "window.plugins.playGamesServices.showAchievements(",
             "  function () {",
             "    // On success",
             "  },",

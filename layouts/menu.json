@@ -3722,7 +3722,7 @@
             "  btnArray.forEach(btn => {",
             "    if (!btn.isVisible()) return;               // ukryte pomiń",
             "",
-            "    console.log(btn.getVariables().get(\"enabled\"), \"testg\")",
+            "    //console.log(btn.getVariables().get(\"enabled\"), \"testg\")",
             "",
             "    const overBtn = btn.cursorOnObject(runtimeScene)",
             "    const clicked = overBtn && gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, \"Left\");",
@@ -3818,8 +3818,9 @@
             "    const buttons = runtimeScene.getObjects(\"tab\" + i);",
             "    for (let button of buttons) {",
             "        if (button.cursorOnObject(runtimeScene) && gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, \"Left\")) {",
-            "            let leaderboardID = \"Czas_lvl2\"// + i;",
-            "            gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, leaderboardID, true);",
+            "            let leaderboardID = \"Czas_lvl\" + i;",
+            "            console.log(leaderboardID, \"lead\")",
+            "            gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, leaderboardID, false);",
             "        }",
             "    }",
             "}"
@@ -3852,7 +3853,34 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::LoginToGooglePlay"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::ShowAchievements"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3878,34 +3906,13 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "GooglePlayGamesLite::SprKonto"
-              },
-              "parameters": [
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "GooglePlayGamesLite::LoginToGooglePlay"
-              },
-              "parameters": [
-                "",
-                ""
-              ]
-            }
-          ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
