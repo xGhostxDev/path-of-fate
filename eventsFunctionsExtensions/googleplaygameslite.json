@@ -72,6 +72,7 @@
             "  //      hiResIconImageUrl: string;",
             "  // }",
             "  console.log(\"Authenticated as \" + playerData.displayName);",
+            "  eventsFunctionContext.returnValue = playerData.displayName;",
             "});",
             "",
             ""
@@ -107,6 +108,7 @@
             "    eventsFunctionContext.returnValue = true;",
             "  },",
             "  function () {",
+            "    eventsFunctionContext.returnValue = false;",
             "    // On error: Auth check could not be done",
             "  }",
             ");"
@@ -155,7 +157,7 @@
             "  score: eventsFunctionContext.getArgument(\"score\"),",
             "  leaderboardId: eventsFunctionContext.getArgument(\"id\"),",
             "};",
-            "window.plugins.playGamesServices.submitScore(",
+            "window.plugins.playGamesServices.submitScoreNow(",
             "  data,",
             "  function () {",
             "    // On success",
@@ -229,7 +231,7 @@
       "functionType": "Action",
       "group": "Google Play Games",
       "name": "odblokuj_osiagniecie",
-      "sentence": "idosg id",
+      "sentence": "",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -254,7 +256,7 @@
             "  achievementId: eventsFunctionContext.getArgument(\"id\"),",
             "};",
             "",
-            "window.plugins.playGamesServices.unlockAchievement(",
+            "window.plugins.playGamesServices.unlockAchievementNow(",
             "  data,",
             "  function () {",
             "    // On success",

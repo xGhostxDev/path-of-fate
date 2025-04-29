@@ -20830,12 +20830,23 @@
         },
         {
           "type": {
-            "value": "Leaderboards::SaveConnectedPlayerScore"
+            "value": "GooglePlayGamesLite::wyslyjwynik"
           },
           "parameters": [
             "",
-            "\"54985b6d-63b0-428c-a908-9bd66a960993\"",
-            "czasInt"
+            "\"CgkInYOvl7YcEAIQAA\"",
+            "czasInt",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::odblokuj_osiagniecie"
+          },
+          "parameters": [
+            "",
+            "\"CgkInYOvl7YcEAIQAQ\"",
+            ""
           ]
         }
       ],

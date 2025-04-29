@@ -3856,23 +3856,6 @@
       "actions": [
         {
           "type": {
-            "value": "GooglePlayGamesLite::LoginToGooglePlay"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "2"
-          ]
-        },
-        {
-          "type": {
             "value": "GooglePlayGamesLite::ShowAchievements"
           },
           "parameters": [
@@ -3880,39 +3863,31 @@
             ""
           ]
         }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "GooglePlayGamesLite::SprKonto"
-              },
-              "parameters": [
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "GooglePlayGamesLite::ShowAchievements"
-              },
-              "parameters": [
-                "",
-                ""
-              ]
-            }
-          ]
-        }
       ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::LoginToGooglePlay"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
