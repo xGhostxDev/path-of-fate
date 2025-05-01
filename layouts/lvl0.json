@@ -88,13 +88,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 60.00000000000001,
+      "height": 200,
       "keepRatio": true,
       "layer": "UI",
       "name": "LineLightJoystick",
       "persistentUuid": "fe134d76-43c1-407c-ba6f-d9add8c5ee8b",
-      "width": 0,
+      "width": 200,
       "x": 113,
       "y": 616,
       "zOrder": 5,
@@ -109,6 +110,7 @@
       "height": 150,
       "layer": "UI",
       "name": "jumpbtn",
+      "opacity": 128,
       "persistentUuid": "93b7b9a8-7944-4f72-b9f2-010f4015fbff",
       "width": 150,
       "x": 1156,
@@ -364,6 +366,7 @@
       "height": 150,
       "layer": "UI",
       "name": "AtakBTN",
+      "opacity": 128,
       "persistentUuid": "37e25f34-dd9a-4fbf-b2f2-91ad196be32e",
       "width": 150,
       "x": 1000,
@@ -19186,7 +19189,7 @@
             "value": "AdMob::SetupBanner"
           },
           "parameters": [
-            "\"\"",
+            "\"ca-app-pub-9157923433968429/6224242932\"",
             "\"\"",
             "yes"
           ]

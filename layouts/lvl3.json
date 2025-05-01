@@ -62,8 +62,8 @@
       "name": "Player",
       "persistentUuid": "8995e633-f282-4f7d-a02e-2c7dbce08e2e",
       "width": 98,
-      "x": 11,
-      "y": 97,
+      "x": 200,
+      "y": 548,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -71,13 +71,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 60.00000000000001,
+      "height": 200,
       "keepRatio": true,
       "layer": "UI",
       "name": "LineLightJoystick",
       "persistentUuid": "fe134d76-43c1-407c-ba6f-d9add8c5ee8b",
-      "width": 0,
+      "width": 200,
       "x": 113,
       "y": 616,
       "zOrder": 5,
@@ -19672,7 +19673,7 @@
             "value": "AdMob::SetupBanner"
           },
           "parameters": [
-            "\"\"",
+            "\"ca-app-pub-9157923433968429/6224242932\"",
             "\"\"",
             "yes"
           ]
