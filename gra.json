@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": true,
+    "adaptGameResolutionAtRuntime": false,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
@@ -16,9 +16,9 @@
     "pixelsRounding": false,
     "projectUuid": "98afaff0-b2c8-4793-8edf-6033c314f3c2",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "",
+    "sizeOnStartupMode": "scaleOuter",
     "templateSlug": "",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "name": "Path of Fate",
     "description": "Path of Fate to intensywna platformówka w której każde Twoje działanie dosłownie zapisuje nowy wątek fabuły. Budzisz się jako Nieznany Wędrowiec na pękniętym, dryfującym archipelagu, a jedyną wskazówką jest pulsujący fioletowy kryształ.",
     "author": "Cobalt Peace Studio",
@@ -60,7 +60,7 @@
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
-      "backgroundImageResourceName": "",
+      "backgroundImageResourceName": "Leonardo_Phoenix_A_vibrant_logo_for_Cobalt_Peace_Studio_featur_1.jpg",
       "gdevelopLogoStyle": "dark-colored",
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
@@ -5599,6 +5599,61 @@
         "name": "Merged Full Background1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Leonardo_Phoenix_A_vibrant_logo_for_Cobalt_Peace_Studio_featur_1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Leonardo_Phoenix_A_vibrant_logo_for_Cobalt_Peace_Studio_featur_1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Transparent Button With White Yellow Border_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Transparent Button With White Yellow Border_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/09c5d56e61a6a8b031a30ff89ae4229243317908385b5701a46e458c2fd6906c_Transparent Button With White Yellow Border_Hovered.png",
+          "name": "Transparent Button With White Yellow Border_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Transparent Button With White Yellow Border_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Transparent Button With White Yellow Border_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7311d88d62c25c9a5e7ed4f2031f4d58fabe564e093b203e62e467a1a995ed32_Transparent Button With White Yellow Border_Idle.png",
+          "name": "Transparent Button With White Yellow Border_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Transparent Button With White Yellow Border_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Transparent Button With White Yellow Border_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e00d068010472f362dc46547bd727f20d85163a88cd2414d7f4fb9df63db2917_Transparent Button With White Yellow Border_Pressed.png",
+          "name": "Transparent Button With White Yellow Border_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Charm-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Charm-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/668523d3d2bb73faa358e1ebafa55f43d2760f8abbe99aa15476121c1bcc7eb6_Charm-Regular.ttf",
+          "name": "Charm-Regular.ttf"
+        }
       }
     ],
     "resourceFolders": []
@@ -5703,6 +5758,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/inapppurchase"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/multilang"
     }
   ],
   "externalLayouts": []

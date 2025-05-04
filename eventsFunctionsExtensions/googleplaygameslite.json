@@ -35,16 +35,7 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "window.plugins.playGamesServices.auth(",
-            "  function () {",
-            "    // On logged in",
-            "  },",
-            "  function () {",
-            "    // On not logged in",
-            "  }",
-            ");"
-          ],
+          "inlineCode": "GooglePlayGames.login();",
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
@@ -54,8 +45,9 @@
       "objectGroups": []
     },
     {
-      "fullName": "",
+      "fullName": "Pobierz nazwe z google",
       "functionType": "StringExpression",
+      "group": "Atuh",
       "name": "GetKontoPlay",
       "sentence": "",
       "events": [
@@ -89,83 +81,20 @@
       "objectGroups": []
     },
     {
-      "fullName": "",
-      "functionType": "Condition",
-      "group": "Atuh",
-      "name": "SprKonto",
-      "sentence": "",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "window.plugins.playGamesServices.isSignedIn(",
-            "  function (result) {",
-            "    // ‘result’ is the following object",
-            "    // {",
-            "    //         \"isSignedIn\": boolean",
-            "    // }",
-            "    console.log(\"Is user signed in: \" + result.isSignedIn);",
-            "    eventsFunctionContext.returnValue = true;",
-            "  },",
-            "  function () {",
-            "    eventsFunctionContext.returnValue = false;",
-            "    // On error: Auth check could not be done",
-            "  }",
-            ");"
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
-        }
-      ],
-      "parameters": [],
-      "objectGroups": []
-    },
-    {
-      "fullName": "",
-      "functionType": "Action",
-      "group": "Atuh",
-      "name": "Wyloguj_play",
-      "sentence": "",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "window.plugins.playGamesServices.signOut(function () {",
-            "  // On logged out",
-            "});"
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
-        }
-      ],
-      "parameters": [],
-      "objectGroups": []
-    },
-    {
-      "fullName": "Wyniki wyslij",
+      "fullName": "Ranking dodaj wynik",
       "functionType": "Action",
       "group": "Google Play Games",
-      "name": "wyslyjwynik",
+      "name": "Ranking_dodaj",
       "sentence": "",
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
             "var data = {",
+            "  id: eventsFunctionContext.getArgument(\"id\"),",
             "  score: eventsFunctionContext.getArgument(\"score\"),",
-            "  leaderboardId: eventsFunctionContext.getArgument(\"id\"),",
             "};",
-            "window.plugins.playGamesServices.submitScoreNow(",
-            "  data,",
-            "  function () {",
-            "    // On success",
-            "  },",
-            "  function () {",
-            "    // On error",
-            "  }",
-            ");"
+            "GooglePlayGames.updatePlayerScore(data);"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -193,7 +122,7 @@
     },
     {
       "description": "Wyświetla interfejs leaderboardów Google Play",
-      "fullName": "Pokaż wszystkie leaderboardy",
+      "fullName": "Pokaż leaderboard id",
       "functionType": "Action",
       "group": "Google Play Games",
       "name": "ShowLeaderboard",
@@ -201,17 +130,7 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "window.plugins.playGamesServices.showLeaderboard(",
-            "  runtimeScene.eventsFunctionContext.getArgument(\"id\"),",
-            "  function () {",
-            "    // On success",
-            "  },",
-            "  function () {",
-            "    // On error",
-            "  }",
-            ");"
-          ],
+          "inlineCode": "GooglePlayGames.showLeaderboard({ id: runtimeScene.eventsFunctionContext.getArgument(\"id\") });",
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
@@ -256,15 +175,7 @@
             "  achievementId: eventsFunctionContext.getArgument(\"id\"),",
             "};",
             "",
-            "window.plugins.playGamesServices.unlockAchievementNow(",
-            "  data,",
-            "  function () {",
-            "    // On success",
-            "  },",
-            "  function () {",
-            "    // On error",
-            "  }",
-            ");"
+            "GooglePlayGames.unlockAchievement({ id: eventsFunctionContext.getArgument(\"id\")});"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -281,6 +192,35 @@
       "objectGroups": []
     },
     {
+      "fullName": "Odblokuj osiagniecie wiele etapow",
+      "functionType": "Action",
+      "group": "Google Play Games",
+      "name": "Osiagniecie_odblokuj_wieleetapow",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "GooglePlayGames.setStepsInAchievement({ id: eventsFunctionContext.getArgument(\"id\"), count: eventsFunctionContext.getArgument(\"etap\") });",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [
+        {
+          "description": "id",
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "description": "etap",
+          "name": "etap",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
       "description": "Wyświetla interfejs osiągnięć",
       "fullName": "Pokaż wszystkie osiągnięcia",
       "functionType": "Action",
@@ -290,16 +230,7 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "window.plugins.playGamesServices.showAchievements(",
-            "  function () {",
-            "    // On success",
-            "  },",
-            "  function () {",
-            "    // On error",
-            "  }",
-            ");"
-          ],
+          "inlineCode": "GooglePlayGames.showAchievements();",
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false

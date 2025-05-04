@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.44819780454103586,
+    "zoomFactor": 0.4950840073748891,
     "windowMask": false
   },
   "objectsGroups": [
@@ -132,6 +132,12 @@
         },
         {
           "name": "osg"
+        },
+        {
+          "name": "pl"
+        },
+        {
+          "name": "en"
         }
       ]
     }
@@ -657,6 +663,38 @@
       "x": 702,
       "y": 35,
       "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "pl",
+      "persistentUuid": "918cbafa-11a2-435b-bb71-4a25be705421",
+      "width": 0,
+      "x": 1062,
+      "y": 438,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Menu",
+      "name": "en",
+      "persistentUuid": "b44baf77-7f70-46ea-8fe7-b13a32a24518",
+      "width": 0,
+      "x": 1060,
+      "y": 514,
+      "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3247,6 +3285,174 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+      "name": "pl",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 4,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Hovered.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Idle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Polski",
+          "font": "CarterOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Polski",
+            "font": "CarterOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Pressed.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+      "name": "en",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 4,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Hovered.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Idle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "English",
+          "font": "CarterOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "English",
+            "font": "CarterOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Floating Out Button Dark Blue_Pressed.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3342,6 +3548,12 @@
           },
           {
             "objectName": "graj"
+          },
+          {
+            "objectName": "pl"
+          },
+          {
+            "objectName": "en"
           },
           {
             "objectName": "autorzyBTN"
@@ -3705,6 +3917,391 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "name": "Jezyk",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "MultiLang::Get_jezyk()",
+                    "=",
+                    "\"pl\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MultiLang::Set_pl"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareStrings"
+                  },
+                  "parameters": [
+                    "MultiLang::Get_jezyk()",
+                    "=",
+                    "\"en\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MultiLang::Set_en"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "graj",
+                    "MultiLang::Get_tlumacznie(\"graj\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "back",
+                    "MultiLang::Get_tlumacznie(\"cofnij\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "osg",
+                    "MultiLang::Get_tlumacznie(\"osg\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "autorzyBTN",
+                    "MultiLang::Get_tlumacznie(\"autorzy\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "pl",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MultiLang::Set_pl"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "graj",
+                    "MultiLang::Get_tlumacznie(\"graj\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "back",
+                    "MultiLang::Get_tlumacznie(\"cofnij\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "osg",
+                    "MultiLang::Get_tlumacznie(\"osg\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "autorzyBTN",
+                    "MultiLang::Get_tlumacznie(\"autorzy\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "en",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MultiLang::Set_en"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "graj",
+                    "MultiLang::Get_tlumacznie(\"graj\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "back",
+                    "MultiLang::Get_tlumacznie(\"cofnij\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "osg",
+                    "MultiLang::Get_tlumacznie(\"osg\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "autorzyBTN",
+                    "MultiLang::Get_tlumacznie(\"autorzy\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Google"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::LoginToGooglePlay"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "osg",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::ShowAchievements"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "tab1",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::ShowLeaderboard"
+          },
+          "parameters": [
+            "",
+            "\"CgkInYOvl7YcEAIQAA\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "name": "Lvl Zmiany scen",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3753,51 +4350,67 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "const savedLvly = localStorage.getItem(\"PostepGry\");",
-            "",
-            "let lvlyArray = [];",
-            "// Jeśli są zapisane dane, odczytujemy je i konwertujemy z JSON",
-            "if (savedLvly) {",
-            "  lvlyArray = JSON.parse(savedLvly);",
-            "} else {",
-            "  // Jeśli nie ma zapisanych danych, ustawiamy domyślny stan",
-            "  lvlyArray = [true];  // Przykład: lvl1 aktywny, reszta zablokowana",
-            "}",
-            "",
-            "// Ile poziomów chcesz sprawdzić",
-            "const maxLevels = 12;",
-            "",
-            "for (let i = 1; i <= maxLevels; i++) {",
-            "  const index = i - 1; // bo lvl1 → lvly[0], lvl2 → lvly[1], itd.",
-            "  const isActive = lvlyArray[index];",
-            "  const objectName = \"lvl\" + i;",
-            "",
-            "  const buttons = runtimeScene.getObjects(objectName);",
-            "",
-            "  //console.log(`Sprawdzam: ${objectName} (lvly[${index}]) → aktywny: ${isActive}`);",
-            "",
-            "  for (const btn of buttons) {",
-            "    if (!isActive) {",
-            "      btn.setVariableBoolean(btn.getVariables().get(\"enabled\"), false);",
-            "      btn.setOpacity(100); // Półprzezroczysty = zablokowany",
-            "      console.log(`${objectName} został zablokowany`);",
-            "    } else {",
-            "      btn.setVariableBoolean(btn.getVariables().get(\"enabled\"), true);",
-            "      btn.setOpacity(255);",
-            "      console.log(`${objectName} aktywny`);",
-            "    }",
-            "  }",
-            "",
-            "  if (buttons.length === 0) {",
-            "    console.warn(`⚠️ Nie znaleziono przycisku: ${objectName}`);",
-            "  }",
-            "}"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
           ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "const savedLvly = localStorage.getItem(\"PostepGry\");",
+                "",
+                "let lvlyArray = [];",
+                "// Jeśli są zapisane dane, odczytujemy je i konwertujemy z JSON",
+                "if (savedLvly) {",
+                "  lvlyArray = JSON.parse(savedLvly);",
+                "} else {",
+                "  // Jeśli nie ma zapisanych danych, ustawiamy domyślny stan",
+                "  lvlyArray = [true];  // Przykład: lvl1 aktywny, reszta zablokowana",
+                "}",
+                "",
+                "// Ile poziomów chcesz sprawdzić",
+                "const maxLevels = 12;",
+                "",
+                "for (let i = 1; i <= maxLevels; i++) {",
+                "  const index = i - 1; // bo lvl1 → lvly[0], lvl2 → lvly[1], itd.",
+                "  const isActive = lvlyArray[index];",
+                "  const objectName = \"lvl\" + i;",
+                "",
+                "  const buttons = runtimeScene.getObjects(objectName);",
+                "",
+                "  //console.log(`Sprawdzam: ${objectName} (lvly[${index}]) → aktywny: ${isActive}`);",
+                "",
+                "  for (const btn of buttons) {",
+                "    if (!isActive) {",
+                "      btn.setVariableBoolean(btn.getVariables().get(\"enabled\"), false);",
+                "      btn.setOpacity(100); // Półprzezroczysty = zablokowany",
+                "      console.log(`${objectName} został zablokowany`);",
+                "    } else {",
+                "      btn.setVariableBoolean(btn.getVariables().get(\"enabled\"), true);",
+                "      btn.setOpacity(255);",
+                "      console.log(`${objectName} aktywny`);",
+                "    }",
+                "  }",
+                "",
+                "  if (buttons.length === 0) {",
+                "    console.warn(`⚠️ Nie znaleziono przycisku: ${objectName}`);",
+                "  }",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": []
@@ -3807,6 +4420,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Rankingi",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3819,8 +4433,7 @@
             "    for (let button of buttons) {",
             "        if (button.cursorOnObject(runtimeScene) && gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, \"Left\")) {",
             "            let leaderboardID = \"Czas_lvl\" + i;",
-            "            console.log(leaderboardID, \"lead\")",
-            "            gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, leaderboardID, false);",
+            "         //   gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, leaderboardID, false);",
             "        }",
             "    }",
             "}"
@@ -3831,63 +4444,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "osg",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Visible"
-          },
-          "parameters": [
-            "osg"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "GooglePlayGamesLite::ShowAchievements"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "GooglePlayGamesLite::LoginToGooglePlay"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
-        }
-      ]
     }
   ],
   "layers": [

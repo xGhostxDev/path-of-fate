@@ -1,0 +1,312 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "Multi langue",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "MultiLang",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "1",
+  "description": "",
+  "tags": [],
+  "authorIds": [
+    "WdS7a7DnRwNVdNnu1r8WqKR3Sjd2"
+  ],
+  "dependencies": [],
+  "globalVariables": [
+    {
+      "name": "lang",
+      "type": "structure",
+      "children": [
+        {
+          "name": "autorzy",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "cofnij",
+          "type": "string",
+          "value": "cofnij"
+        },
+        {
+          "name": "graj",
+          "type": "string",
+          "value": "graj"
+        },
+        {
+          "name": "osg",
+          "type": "string",
+          "value": "osiągniecia"
+        }
+      ]
+    }
+  ],
+  "sceneVariables": [],
+  "eventsFunctions": [
+    {
+      "description": "Zwroci np pl,en",
+      "fullName": "Pobierz jezyl",
+      "functionType": "StringExpression",
+      "group": "Lang",
+      "name": "Get_jezyk",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = navigator.language || \"\";",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "zwraca tlumacznie",
+      "functionType": "StringExpression",
+      "group": "Lang",
+      "name": "Get_tlumacznie",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "co",
+                "=",
+                "\"graj\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "lang.graj"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "co",
+                "=",
+                "\"cofnij\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "lang.cofnij"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "co",
+                "=",
+                "\"osg\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "lang.osg"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "co",
+                "=",
+                "\"autorzy\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "lang.autorzy"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "supplementaryInformation": "[\"lang.\"]",
+        "type": "string"
+      },
+      "parameters": [
+        {
+          "description": "",
+          "name": "co",
+          "supplementaryInformation": "[\"graj\",\"osg\",\"cofnij\",\"autorzy\"]",
+          "type": "stringWithSelector"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Zamian jezyka na pl",
+      "fullName": "Zamian jezyka na pl",
+      "functionType": "Action",
+      "group": "Lang",
+      "name": "Set_pl",
+      "sentence": "Język na PL",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.graj",
+                "=",
+                "\"Graj\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.osg",
+                "=",
+                "\"Osiągniecia\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.cofnij",
+                "=",
+                "\"Powrót\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.autorzy",
+                "=",
+                "\"Autorzy\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Zamian jezyka na pl",
+      "fullName": "Zamian jezyka na en",
+      "functionType": "Action",
+      "group": "Lang",
+      "name": "Set_en",
+      "sentence": "Język na EN",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.graj",
+                "=",
+                "\"Play\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.osg",
+                "=",
+                "\"Achievement\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.cofnij",
+                "=",
+                "\"Back\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "lang.autorzy",
+                "=",
+                "\"Authors\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}

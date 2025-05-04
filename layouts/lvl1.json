@@ -19973,7 +19973,7 @@
           },
           "parameters": [
             "\"ca-app-pub-9157923433968429/6224242932\"",
-            "\"\"",
+            "\"ca-app-pub-9157923433968429/6224242932\"",
             "yes"
           ]
         },
@@ -20831,7 +20831,7 @@
         },
         {
           "type": {
-            "value": "GooglePlayGamesLite::wyslyjwynik"
+            "value": "GooglePlayGamesLite::Ranking_dodaj"
           },
           "parameters": [
             "",
@@ -20847,6 +20847,17 @@
           "parameters": [
             "",
             "\"CgkInYOvl7YcEAIQAQ\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "GooglePlayGamesLite::Osiagniecie_odblokuj_wieleetapow"
+          },
+          "parameters": [
+            "",
+            "\"CgkInYOvl7YcEAIQAw\"",
+            "1",
             ""
           ]
         }
@@ -20875,11 +20886,6 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ]
     },
@@ -21003,7 +21009,7 @@
               "parameters": [
                 "czasInt",
                 "-",
-                "15"
+                "10"
               ]
             }
           ]
