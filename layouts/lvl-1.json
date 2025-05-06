@@ -88,13 +88,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 60.00000000000001,
+      "height": 200,
       "keepRatio": true,
       "layer": "UI",
       "name": "LineLightJoystick",
       "persistentUuid": "fe134d76-43c1-407c-ba6f-d9add8c5ee8b",
-      "width": 0,
+      "width": 200,
       "x": 113,
       "y": 616,
       "zOrder": 5,
@@ -105,15 +106,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 72,
-      "keepRatio": true,
+      "depth": 88.88888888888889,
+      "height": 150,
       "layer": "UI",
       "name": "jumpbtn",
+      "opacity": 128,
       "persistentUuid": "93b7b9a8-7944-4f72-b9f2-010f4015fbff",
-      "width": 81,
-      "x": 1156,
-      "y": 623,
+      "width": 150,
+      "x": 1120,
+      "y": 550,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -242,15 +243,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 73,
-      "keepRatio": true,
+      "depth": 86.74698795180724,
+      "height": 150,
       "layer": "UI",
       "name": "AtakBTN",
+      "opacity": 128,
       "persistentUuid": "37e25f34-dd9a-4fbf-b2f2-91ad196be32e",
-      "width": 83,
-      "x": 1045,
-      "y": 623,
+      "width": 150,
+      "x": 950,
+      "y": 550,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -266,8 +267,8 @@
       "name": "czas",
       "persistentUuid": "d72f1563-61c9-475a-bfe5-9d1414bafa1a",
       "width": 174,
-      "x": 34,
-      "y": -6,
+      "x": 10,
+      "y": 40,
       "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
@@ -19292,24 +19293,6 @@
             "yes",
             "",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AdMob::SetTestMode"
-          },
-          "parameters": [
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "AdMob::SetupBanner"
-          },
-          "parameters": [
-            "\"\"",
-            "\"\"",
-            "yes"
           ]
         },
         {

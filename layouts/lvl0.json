@@ -113,7 +113,7 @@
       "opacity": 128,
       "persistentUuid": "93b7b9a8-7944-4f72-b9f2-010f4015fbff",
       "width": 150,
-      "x": 1156,
+      "x": 1120,
       "y": 550,
       "zOrder": 6,
       "numberProperties": [],
@@ -369,7 +369,7 @@
       "opacity": 128,
       "persistentUuid": "37e25f34-dd9a-4fbf-b2f2-91ad196be32e",
       "width": 150,
-      "x": 1000,
+      "x": 950,
       "y": 550,
       "zOrder": 23,
       "numberProperties": [],
@@ -19181,16 +19181,6 @@
             "value": "AdMob::SetTestMode"
           },
           "parameters": [
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "AdMob::SetupBanner"
-          },
-          "parameters": [
-            "\"ca-app-pub-9157923433968429/6224242932\"",
-            "\"\"",
             "yes"
           ]
         },

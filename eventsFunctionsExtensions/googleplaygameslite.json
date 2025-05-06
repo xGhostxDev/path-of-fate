@@ -34,11 +34,27 @@
       "sentence": "Zaloguj użytkownika do Google Play Games",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "GooglePlayGames.login();",
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "GooglePlayGames.login();",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": [],
@@ -52,26 +68,42 @@
       "sentence": "",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "window.plugins.playGamesServices.showPlayer(function (playerData) {",
-            "  // playerData is the following object",
-            "  // {",
-            "  //      displayName: string;",
-            "  //      playerId: string;",
-            "  //      title: string;",
-            "  //      iconImageUrl: string;",
-            "  //      hiResIconImageUrl: string;",
-            "  // }",
-            "  console.log(\"Authenticated as \" + playerData.displayName);",
-            "  eventsFunctionContext.returnValue = playerData.displayName;",
-            "});",
-            "",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
           ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "window.plugins.playGamesServices.showPlayer(function (playerData) {",
+                "  // playerData is the following object",
+                "  // {",
+                "  //      displayName: string;",
+                "  //      playerId: string;",
+                "  //      title: string;",
+                "  //      iconImageUrl: string;",
+                "  //      hiResIconImageUrl: string;",
+                "  // }",
+                "  console.log(\"Authenticated as \" + playerData.displayName);",
+                "  eventsFunctionContext.returnValue = playerData.displayName;",
+                "});",
+                "",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "expressionType": {
@@ -88,22 +120,33 @@
       "sentence": "",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "var data = {",
-            "  id: eventsFunctionContext.getArgument(\"id\"),",
-            "  score: eventsFunctionContext.getArgument(\"score\"),",
-            "};",
-            "GooglePlayGames.updatePlayerScore(data);"
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var data = {",
+                "  id: eventsFunctionContext.getArgument(\"id\"),",
+                "  score: eventsFunctionContext.getArgument(\"score\"),",
+                "};",
+                "GooglePlayGames.updatePlayerScore(data);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": [
@@ -129,11 +172,27 @@
       "sentence": "Pokaż leaderboard _PARAM1_ Google Play ",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "GooglePlayGames.showLeaderboard({ id: runtimeScene.eventsFunctionContext.getArgument(\"id\") });",
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "GooglePlayGames.showLeaderboard({ id: runtimeScene.eventsFunctionContext.getArgument(\"id\") });",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": [
@@ -154,32 +213,32 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "conditions": [
             {
               "type": {
-                "value": "SetStringVariable"
+                "value": "SystemInfo::HasTouchScreen"
               },
               "parameters": [
-                "osgid",
-                "=",
-                "GetArgumentAsString(\"osgid\")"
+                ""
               ]
             }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "var data = {",
-            "  achievementId: eventsFunctionContext.getArgument(\"id\"),",
-            "};",
-            "",
-            "GooglePlayGames.unlockAchievement({ id: eventsFunctionContext.getArgument(\"id\")});"
           ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "var data = {",
+                "  achievementId: eventsFunctionContext.getArgument(\"id\"),",
+                "};",
+                "",
+                "GooglePlayGames.unlockAchievement({ id: eventsFunctionContext.getArgument(\"id\")});"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": [
@@ -199,11 +258,27 @@
       "sentence": "",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "GooglePlayGames.setStepsInAchievement({ id: eventsFunctionContext.getArgument(\"id\"), count: eventsFunctionContext.getArgument(\"etap\") });",
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "GooglePlayGames.setStepsInAchievement({ id: eventsFunctionContext.getArgument(\"id\"), count: eventsFunctionContext.getArgument(\"etap\") });",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": [
@@ -229,11 +304,27 @@
       "sentence": "Pokaż osiągnięcia Google Play",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "GooglePlayGames.showAchievements();",
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": false
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "GooglePlayGames.showAchievements();",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
         }
       ],
       "parameters": [],
