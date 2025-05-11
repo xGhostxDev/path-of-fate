@@ -18136,6 +18136,7 @@
       "assetStoreId": "112c69f62e03fa6df7716cc6b8f174c17857fbf71c8d3fffd16fa8fdbfa49bf1",
       "name": "LineLightJoystick",
       "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -18217,6 +18218,7 @@
       "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
       "name": "jumpbtn",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -18364,6 +18366,7 @@
       "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
       "name": "AtakBTN",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -20072,6 +20075,16 @@
                 "PlatformerObject",
                 "\"Left\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "StrzalaLewo",
+                "True",
+                ""
+              ]
             }
           ]
         },
@@ -20098,6 +20111,16 @@
                 "Player",
                 "PlatformerObject",
                 "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "StrzalaLewo",
+                "False",
+                ""
               ]
             }
           ]
@@ -20163,31 +20186,93 @@
                 "=",
                 "\"Attack\""
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "Player",
-                "FireBullet",
-                "Player.CenterX()",
-                "Player.CenterY()",
-                "ArrowGracz",
-                "0",
-                "300",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "StrzalaLewo",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
+                    "ArrowGracz",
+                    "0",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArrowGracz",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "ArrowGracz",
-                "Scale",
-                "=",
-                "3"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "StrzalaLewo",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
+                    "ArrowGracz",
+                    "-180",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArrowGracz",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                }
               ]
             }
           ]

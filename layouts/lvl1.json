@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47893418845352564,
+    "zoomFactor": 0.6040838749988882,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -962,6 +962,23 @@
       "x": 4710,
       "y": 523,
       "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 87,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TabliczkaGora",
+      "persistentUuid": "d08b900c-2806-403d-a823-c198dd07282c",
+      "width": 145,
+      "x": 546,
+      "y": -1,
+      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -18136,6 +18153,7 @@
       "assetStoreId": "112c69f62e03fa6df7716cc6b8f174c17857fbf71c8d3fffd16fa8fdbfa49bf1",
       "name": "LineLightJoystick",
       "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -18217,6 +18235,7 @@
       "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
       "name": "jumpbtn",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -18298,17 +18317,6 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": []
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -18364,6 +18372,7 @@
       "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
       "name": "AtakBTN",
       "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -19498,6 +19507,67 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TabliczkaGora",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "strzalka",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "strzalka",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 9
+                      },
+                      {
+                        "x": 316,
+                        "y": 9
+                      },
+                      {
+                        "x": 316,
+                        "y": 254
+                      },
+                      {
+                        "x": 7,
+                        "y": 254
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -19923,13 +19993,13 @@
         "objectName": "LivesBigTiledSprite"
       },
       {
-        "objectName": "NewSprite"
-      },
-      {
         "objectName": "bullet"
       },
       {
         "objectName": "Portal"
+      },
+      {
+        "objectName": "TabliczkaGora"
       }
     ]
   },
@@ -20072,6 +20142,16 @@
                 "PlatformerObject",
                 "\"Left\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "StrzalaLewo",
+                "True",
+                ""
+              ]
             }
           ]
         },
@@ -20098,6 +20178,16 @@
                 "Player",
                 "PlatformerObject",
                 "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "StrzalaLewo",
+                "False",
+                ""
               ]
             }
           ]
@@ -20163,31 +20253,93 @@
                 "=",
                 "\"Attack\""
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "Player",
-                "FireBullet",
-                "Player.CenterX()",
-                "Player.CenterY()",
-                "ArrowGracz",
-                "0",
-                "300",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "StrzalaLewo",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
+                    "ArrowGracz",
+                    "-180",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArrowGracz",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "ArrowGracz",
-                "Scale",
-                "=",
-                "3"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "StrzalaLewo",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
+                    "ArrowGracz",
+                    "0",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArrowGracz",
+                    "Scale",
+                    "=",
+                    "3"
+                  ]
+                }
               ]
             }
           ]
@@ -20835,7 +20987,7 @@
           },
           "parameters": [
             "",
-            "\"CgkInYOvl7YcEAIQAA\"",
+            "\"CgkIzd6-yqITEAIQAQ\"",
             "czasInt",
             ""
           ]
@@ -20846,7 +20998,7 @@
           },
           "parameters": [
             "",
-            "\"CgkInYOvl7YcEAIQAQ\"",
+            "\"CgkIzd6-yqITEAIQAg\"",
             ""
           ]
         },
@@ -20856,7 +21008,7 @@
           },
           "parameters": [
             "",
-            "\"CgkInYOvl7YcEAIQAw\"",
+            "\"CgkIzd6-yqITEAIQAw\"",
             "1",
             ""
           ]

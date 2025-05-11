@@ -24,22 +24,22 @@
         {
           "name": "autorzy",
           "type": "string",
-          "value": "0"
+          "value": "Autorzy"
         },
         {
           "name": "cofnij",
           "type": "string",
-          "value": "cofnij"
+          "value": "Cofnij"
         },
         {
           "name": "graj",
           "type": "string",
-          "value": "graj"
+          "value": "Graj"
         },
         {
           "name": "osg",
           "type": "string",
-          "value": "osiągniecia"
+          "value": "Osiągniecia"
         }
       ]
     }

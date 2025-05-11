@@ -49,7 +49,21 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "GooglePlayGames.login();",
+              "inlineCode": [
+                "cordova.exec(\r",
+                "    function(successMessage) {\r",
+                "        console.log(\"Success callback from Java: \" + successMessage);\r",
+                "        //alert(\"Success: \" + successMessage);\r",
+                "    },\r",
+                "    function(errorMessage) {\r",
+                "        console.error(\"Error from Java: \" + errorMessage);\r",
+                "        //alert(\"Error: \" + errorMessage);\r",
+                "    },\r",
+                "    \"GooglePlayGamesPlugin\", // nazwa pluginu\r",
+                "    \"login\",           // akcja\r",
+                ");\r",
+                ""
+              ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
@@ -319,7 +333,22 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": "GooglePlayGames.showAchievements();",
+              "inlineCode": [
+                "cordova.exec(\r",
+                "    function(successMessage) {\r",
+                "        console.log(\"Success callback from Java: \" + successMessage);\r",
+                "      //  alert(\"Success: \" + successMessage);\r",
+                "    },\r",
+                "    function(errorMessage) {\r",
+                "        console.error(\"Error from Java: \" + errorMessage);\r",
+                "       // alert(\"Error: \" + errorMessage);\r",
+                "    },\r",
+                "    \"GooglePlayGamesPlugin\", // nazwa pluginu\r",
+                "    \"showAchievements\",           // akcja\r",
+                "    [\"\"]     // argumenty\r",
+                ");\r",
+                ""
+              ],
               "parameterObjects": "",
               "useStrict": true,
               "eventsSheetExpanded": false
